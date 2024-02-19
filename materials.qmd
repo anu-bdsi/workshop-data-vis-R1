@@ -1,0 +1,54 @@
+---
+title: "Materials"
+date: 04/10/2024
+engine: knitr
+format: 
+  html:
+    css: assets/webex.css
+    include-after-body: assets/webex.js
+---
+
+```{r setup, include = FALSE}
+library(webexercises)
+ex_tabset <- function(id) {
+  paste0("[_Exercise ", id, "_](#tabset-1-", id, "-tab){onclick=",
+         'document.getElementById(', "'tabset-1-", id, "-tab').click();",
+         '}')
+}
+```
+
+
+## 🕙 Schedule
+
+
+Time | Content 
+:-----------|:-----------------|
+10.00-10.20 | [The Grammar of Graphics](slides/slide1.html){target="_blank"} |     
+10.20-10.30 | `r ex_tabset(1)` |     
+10.30-10.50 | [Getting started with `ggplot2`](slides/slide2.html){target="_blank"} |     
+10.50-11.10 | `r ex_tabset(2)` |      
+11.10-11.20 | [Plotting multiple layers with `ggplot2`](slides/slide3.html){target="_blank"} |     
+11.20-11.40 | `r ex_tabset(3)` |     
+11.40-12.00 | [Scales and guides in `ggplot2`](slides/slide4.html){target="_blank"} |     
+12.00-12.20 | `r ex_tabset(4)` |     
+12.50-13.00 | [Wrap up](slides/slide5.html){target="_blank"} |      
+
+## 📑 Resources
+
+- Learn R Chapter 6: Data visualisation with R [{{< fa link >}}](https://learnr.numbat.space/chapter6){target="_blank"}
+
+## 🏋️‍♀️ Exercises
+
+::: panel-tabset
+
+## Exercise 1
+
+
+## Exercise 2
+
+
+## Exercise 3
+
+## Exercise 4
+
+:::
