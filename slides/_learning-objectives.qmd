@@ -1,4 +1,4 @@
 - Understand the concept of the grammar of graphics
-- Drawing simple plots using `ggplot2`
-- Drawing plots with multiple layers in `ggplot2`
+- Draw simple plots using `ggplot2`
+- Draw plots with multiple layers in `ggplot2`
 - Manipulate the scale and guides in `ggplot2`
