@@ -32,7 +32,7 @@
     "href": "index.html#learning-objectives",
     "title": "Data Visualisation with R Part 1",
     "section": "🎯 Learning objectives",
-    "text": "🎯 Learning objectives\nUpon completion of this workshop, participants should be able to:\n\nUnderstand the concept of the grammar of graphics\nDrawing simple plots using ggplot2\nDrawing plots with multiple layers in ggplot2\nManipulate the scale and guides in ggplot2"
+    "text": "🎯 Learning objectives\nUpon completion of this workshop, participants should be able to:\n\nUnderstand the concept of the grammar of graphics\nDraw simple plots using ggplot2\nDraw plots with multiple layers in ggplot2\nManipulate the scale and guides in ggplot2"
   },
   {
     "objectID": "index.html#preperation",
