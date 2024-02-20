@@ -7,7 +7,9 @@ categories: BDSI Workshop
 
 ## 👋 Welcome 
 
-This is a training workshop for R beginners offered by the Australian National University (ANU) Biological Data Science Institute (BDSI).
+This is a training workshop for staff and students affiliated with the Australian National University (ANU) offered by the ANU Biological Data Science Institute (BDSI).
+
+The aim of the workshop is to equip participants with the skills to plot using `ggplot2`, which implements the concept of the "grammar of graphics". This workshop is suitable for those that are already familiar with R but have little to no experience using `ggplot2` to draw plots. 
 
 ## 🎯 Learning objectives 
 
