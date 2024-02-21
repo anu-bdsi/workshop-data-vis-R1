@@ -18,21 +18,21 @@
     "href": "index.html",
     "title": "Data Visualisation with R Part 1",
     "section": "",
-    "text": "This is a training workshop for staff and students affiliated with the Australian National University (ANU) offered by the ANU Biological Data Science Institute (BDSI).\nThe aim of the workshop is to equip participants with the skills to plot using ggplot2, which implements the concept of the “grammar of graphics”. This workshop is suitable for those that are already familiar with R but have little to no experience using ggplot2 to draw plots.\nThis website is brought to you by the ANU Biological Data Science Institute."
+    "text": "This is a training workshop for staff and students affiliated with the Australian National University (ANU) offered by the ANU Biological Data Science Institute (BDSI).\nThe aim of the workshop is to equip participants with the skills to plot using ggplot2, which implements the concept of the “grammar of graphics”. This workshop is designed for those already familiar with R, particularly in data wrangling, but with limited to no experience using ggplot2 for plotting. An understanding of data wrangling in R is expected. Participants without prior experience in data wrangling with R are encouraged to attend the Data Wrangling with R (Part 1) workshop before joining this session. This workshop is not recommended for individuals without any knowledge of data wrangling in R to enroll in this workshop.\nThis website is brought to you by the ANU Biological Data Science Institute."
   },
   {
     "objectID": "index.html#welcome",
     "href": "index.html#welcome",
     "title": "Data Visualisation with R Part 1",
     "section": "",
-    "text": "This is a training workshop for staff and students affiliated with the Australian National University (ANU) offered by the ANU Biological Data Science Institute (BDSI).\nThe aim of the workshop is to equip participants with the skills to plot using ggplot2, which implements the concept of the “grammar of graphics”. This workshop is suitable for those that are already familiar with R but have little to no experience using ggplot2 to draw plots."
+    "text": "This is a training workshop for staff and students affiliated with the Australian National University (ANU) offered by the ANU Biological Data Science Institute (BDSI).\nThe aim of the workshop is to equip participants with the skills to plot using ggplot2, which implements the concept of the “grammar of graphics”. This workshop is designed for those already familiar with R, particularly in data wrangling, but with limited to no experience using ggplot2 for plotting. An understanding of data wrangling in R is expected. Participants without prior experience in data wrangling with R are encouraged to attend the Data Wrangling with R (Part 1) workshop before joining this session. This workshop is not recommended for individuals without any knowledge of data wrangling in R to enroll in this workshop."
   },
   {
     "objectID": "index.html#learning-objectives",
     "href": "index.html#learning-objectives",
     "title": "Data Visualisation with R Part 1",
     "section": "🎯 Learning objectives",
-    "text": "🎯 Learning objectives\nUpon completion of this workshop, participants should be able to:\n\nUnderstand the concept of the grammar of graphics\nDraw simple plots using ggplot2\nDraw plots with multiple layers in ggplot2\nManipulate the scale and guides in ggplot2"
+    "text": "🎯 Learning objectives\nUpon completion of this workshop, participants should be able to:\n\nUnderstand the concept of the grammar of graphics\nDraw simple plots using ggplot2\nDraw plots with multiple layers in ggplot2\nManipulate the scales and guides in ggplot2"
   },
   {
     "objectID": "index.html#preperation",
