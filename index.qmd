@@ -2,6 +2,7 @@
 title: "Data Visualisation with R [Part 1]{.part-label}"
 date: 2024/04/10
 categories: BDSI Workshop
+engine: knitr
 ---
 
 
@@ -51,11 +52,7 @@ install.packages(c("tidyverse", "rmarkdown", "agridat", "ggbeeswarm", "hexbin"))
 
 ## 👩‍🏫👨‍🏫 Teaching team 
 
-::: {layout-ncol=3 style="text-align:center;"}
 
+`r photo_path <- "slides/"`
 
-![Dr. Emi Tanaka](slides/images/team/emi-square.png){.circle-image-120}
-
-![Helper](slides/images/team/dummy.jpg){.circle-image-120}
-
-:::
+{{< include slides/_team.qmd >}}
