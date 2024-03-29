@@ -39,14 +39,21 @@
     "href": "index.html#preperation",
     "title": "Data Visualisation with R Part 1",
     "section": "🔧 Preperation",
-    "text": "🔧 Preperation\nPlease ensure that you download and install\n\nthe latest version of R,\nthe latest version of RStudio Desktop,\nSlack (alternatively you can use the web version), and\nthe following packages by opening RStudio Desktop, then copy and paste the command below in the Console section, pushing Enter after pasting.\n\ninstall.packages(c(\"tidyverse\", \"rmarkdown\", \"agridat\", \"ggbeeswarm\", \"hexbin\"))\n If you are having issues, see also here or talk to the teaching team.\n\n\n\n\n\n\n Slack workspace\n\n\n\n\nJoin ANU Learning Data Slack Community\n\n\nYou must use your ANU email to sign up.\nUse your full name.\nBy joining, you agree to abide by this code of conduct."
+    "text": "🔧 Preperation\nPlease ensure that you download and install\n\nthe latest version of R,\nthe latest version of RStudio Desktop,\n(Optional) Slack (alternatively you can use the web version), and\nthe following packages by opening RStudio Desktop, then copy and paste the command below in the Console section, pushing Enter after pasting.\n\ninstall.packages(c(\"tidyverse\", \"rmarkdown\", \"agridat\", \"ggbeeswarm\", \"hexbin\"))\n If you are having issues, see also here or talk to the teaching team.\n\n\n\n\n\n\n Slack workspace (Optional)\n\n\n\nWe use Slack to facilitate communication between workshop participants and the teaching team.\n\nJoin ANU Learning Data Slack Community\n\n\nYou must use your ANU email to sign up.\nUse your full name.\nBy joining, you agree to abide by this code of conduct."
   },
   {
     "objectID": "index.html#teaching-team",
     "href": "index.html#teaching-team",
     "title": "Data Visualisation with R Part 1",
-    "section": "👩‍🏫👨‍🏫 Teaching team",
-    "text": "👩‍🏫👨‍🏫 Teaching team\n\n\n\n\n\n\n\n\n\nDr. Emi Tanaka\n\n\n\n\n\n\n\nHelper"
+    "section": "Teaching team",
+    "text": "Teaching team\n\n\n\n\nDr. Emi TanakaJeremias IvanAudrey PrasetyaRyan O’DonnellNils Kreuter\n\n\n\n\n\n Academic statistician passionate about data science and open source software\n\n\n Currently, Deputy Director of ANU Biological Data Science Institute and Executive Editor of R Journal\n\n\n PhD in Statistical Bioinformatics\n\n\n BSci (Adv Maths) with major in Mathematics and Statistics\n\n\n Loves data and coding\n\n\n         https://emitanaka.org      @statsgen      fosstodon.org/@emitanaka\n\n\n\n\n\n\n 2nd year of PhD student at ANU, working on phylogenomics methods to study hybridisation\n\n\n BSci in Bioinformatics\n\n\n Enjoy hiking and science\n\n\n jeremiasivan\n\n\n\n\n\n\n\n\n (Almost finishing) PhD student @Moritz Lab, E&E Division, RSB, ANU\n\n\n Working on historical biogeography of Indo-Australian birds\n\n\n BSc (Hons) with major in Zoology and Ecology & Conservation\n\n\n Loves games, art markets, and FOOD\n\n\n @goaudreymp\n\n\n https://linktr.ee/goaudreymp\n\n\n\n\n\n\n\n\n 3rd Year PhD student @ Linde Lab, E&E Division, RSB, ANU\n\n\n Investigating the evolution of the Australian orchid flora and associated funga\n\n\n MScSt (Biodiversity Science)\n\n\n Loves playing music, reading, nature\n\n\n @rpodonnell\n\n\n rpodonnell.github.io\n\n\n\n\n\n\n\n\n 2nd Year PhD student @ Sequeira Lab, E&E Division, RSB, ANU\n\n\n Identifying social, collective, or coordinated movement behaviour patterns in sharks using tracking data\n\n\n MSc (Marine Biology), BSc (Biology)\n\n\n Loves triathlon, hiking and the ocean\n\n\n @nilskreuter\n\n\n https://linktr.ee/nilskreuter"
+  },
+  {
+    "objectID": "index.html#materials",
+    "href": "index.html#materials",
+    "title": "Data Visualisation with R Part 1",
+    "section": "Materials",
+    "text": "Materials\nThe materials can be found here.\n   \nThese materials are shared under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License."
   },
   {
     "objectID": "help.html",
@@ -74,28 +81,28 @@
     "href": "help.html#reporting-mistakes",
     "title": "Help",
     "section": "Reporting mistakes",
-    "text": "Reporting mistakes\nDid you find mistakes in the workshop? Please let us know either by either emailing Emi (emi.tanaka@anu.edu.au) or reporting it at https://github.com/anu-bdsi/training-R1/issues (latter preferred)."
+    "text": "Reporting mistakes\nDid you find mistakes in the workshop? Please let us know by emailing workshop.bdsi@anu.edu.au."
   },
   {
     "objectID": "help.html#providing-feedback",
     "href": "help.html#providing-feedback",
     "title": "Help",
     "section": "Providing feedback",
-    "text": "Providing feedback\nWe want to always improve our delivery! Please let us know what is working, what is not working, and/or other feedback. For feedback, you can either email Emi (emi.tanaka@anu.edu.au) or use the survey link that was/will be emailed to you (for workshop participants)."
+    "text": "Providing feedback\nWe want to always improve our delivery! Please let us know what is working, what is not working, and/or other feedback. For feedback, you can either email workshop.bdsi@anu.edu.au or use the survey link that was/will be provided to you (if you are a workshop participants)."
   },
   {
     "objectID": "materials.html",
     "href": "materials.html",
     "title": "Materials",
     "section": "",
-    "text": "Time\nContent\n\n\n\n\n10.00-10.20\nThe Grammar of Graphics\n\n\n10.20-10.30\nExercise 1\n\n\n10.30-10.50\nDrawing plots with ggplot2\n\n\n10.50-11.10\nExercise 2\n\n\n11.10-11.20\nDrawing multiple layers with ggplot2\n\n\n11.20-11.40\nExercise 3\n\n\n11.40-12.00\nGuide and scale with ggplot2\n\n\n12.00-12.20\nExercise 4\n\n\n12.50-13.00\nWrap up\nThis website is brought to you by the ANU Biological Data Science Institute."
+    "text": "This website is brought to you by the ANU Biological Data Science Institute."
   },
   {
     "objectID": "materials.html#schedule",
     "href": "materials.html#schedule",
     "title": "Materials",
-    "section": "",
-    "text": "Time\nContent\n\n\n\n\n10.00-10.20\nThe Grammar of Graphics\n\n\n10.20-10.30\nExercise 1\n\n\n10.30-10.50\nDrawing plots with ggplot2\n\n\n10.50-11.10\nExercise 2\n\n\n11.10-11.20\nDrawing multiple layers with ggplot2\n\n\n11.20-11.40\nExercise 3\n\n\n11.40-12.00\nGuide and scale with ggplot2\n\n\n12.00-12.20\nExercise 4\n\n\n12.50-13.00\nWrap up"
+    "section": "🕙 Schedule",
+    "text": "🕙 Schedule\n\n\n\n\n\nTime\nContent\n\n\n\n\n10:00–10:30\nThe Grammar of Graphics\n\n\n10:30–10:45\nExercise 1\n\n\n10:45–11:15\nDrawing plots with ggplot2\n\n\n11:15–11:30\nExercise 2\n\n\n11:30–11:40\nBreak\n\n\n11:40–12:00\nDrawing multiple layers with ggplot2\n\n\n12:00–12:10\nExercise 3\n\n\n12:10–12:40\nGuide and scale with ggplot2\n\n\n12:40–12:55\nExercise 4\n\n\n12:55–13:00\nWrap up"
   },
   {
     "objectID": "materials.html#resources",
@@ -109,6 +116,6 @@
     "href": "materials.html#exercises",
     "title": "Materials",
     "section": "🏋️‍♀️ Exercises",
-    "text": "🏋️‍♀️ Exercises\n\nExercise 1Exercise 2Exercise 3Exercise 4"
+    "text": "🏋️‍♀️ Exercises\n\nExercise 1Exercise 2Exercise 3Exercise 4\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\n\nReflect on learning objectives\n\n\n\nYou should be able to:\n\n\n Understand the concept of the grammar of graphics\n\n\n\n\n\n\n\n\n\n\n\n\nReflect on learning objectives\n\n\n\nYou should be able to:\n\n\n Create basic plots using ggplot2\n\n\n\n\n\n\n\n\n\n\n\n\nReflect on learning objectives\n\n\n\nYou should be able to:\n\n\n Construct plots with multiple layers in ggplot2\n\n\n\n\n\n\n\n\n\n\n\n\nReflect on learning objectives\n\n\n\nYou should be able to:\n\n\n Adjust scales and guides within ggplot2"
   }
 ]
