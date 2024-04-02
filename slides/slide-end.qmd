@@ -37,6 +37,10 @@ date-format: "D[th] MMMM YYYY"
 
 ## Feedback
 
+<center>
+[![](images/survey-qrcode.png){width="20%"}](https://anu.au1.qualtrics.com/jfe/form/SV_6fz6zRSzeG0pskC)
+</center>
+
 - What worked or didn't work for you?
 - What other workshops?
 - Tell us at {{< fa envelope >}} **workshop.bdsi@anu.edu.au**
