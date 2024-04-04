@@ -15,6 +15,7 @@ website:
     ![](/images/ANU_Secondary_Horizontal_GoldBlack.png)
 format:
   html:
+    theme: sketchy
     css: styles.css
     toc: true
     
