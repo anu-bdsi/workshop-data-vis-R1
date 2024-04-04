@@ -25,7 +25,7 @@
     "href": "materials.html#schedule",
     "title": "Materials",
     "section": "🕙 Schedule",
-    "text": "🕙 Schedule\n\n\n\n\n\nTime\nContent\n\n\n\n\n10:00–10:30\nThe Grammar of Graphics\n\n\n10:30–10:45\nExercise 1\n\n\n10:45–11:15\nDrawing plots with ggplot2\n\n\n11:15–11:30\nExercise 2\n\n\n11:30–11:40\nBreak\n\n\n11:40–12:00\nDrawing multiple layers with ggplot2\n\n\n12:00–12:10\nExercise 3\n\n\n12:10–12:40\nGuide and scale with ggplot2\n\n\n12:40–12:55\nExercise 4\n\n\n12:55–13:00\nWrap up"
+    "text": "🕙 Schedule\n\n\n\n\n\nTime\nContent\n\n\n\n\n10:00–10:30\nThe Grammar of Graphics\n\n\n10:30–11:00\nExercise 1\n\n\n11:00–11:30\nDrawing plots with ggplot2\n\n\n11:30–12:00\nExercise 2\n\n\n12:00–12:10\nBreak\n\n\n12:10–12:30\nDrawing multiple layers with ggplot2\n\n\n12:30–12:50\nExercise 3\n\n\n12:50–13:00\nWrap up"
   },
   {
     "objectID": "materials.html#resources",
@@ -56,25 +56,60 @@
     "text": "Summary"
   },
   {
-    "objectID": "slides/slide2.html#current-learning-objective",
-    "href": "slides/slide2.html#current-learning-objective",
-    "title": "Drawing plots with ggplot2",
+    "objectID": "slides/slide3.html#current-learning-objective",
+    "href": "slides/slide3.html#current-learning-objective",
+    "title": "Drawing multiple layers with ggplot2",
     "section": " Current learning objective",
-    "text": "Current learning objective\n\n\n-Understand the concept of the grammar of graphics\n\n\nCreate basic plots using ggplot2\n\n\n-Construct plots with multiple layers in ggplot2\n\n\n-Adjust scales and guides within ggplot2"
+    "text": "Current learning objective\n\n\n-Understand the concept of the grammar of graphics\n\n\n-Create basic plots using ggplot2\n\n\nConstruct plots with multiple layers in ggplot2\n\n\n-Adjust scales and guides within ggplot2"
   },
   {
-    "objectID": "slides/slide2.html#summary",
-    "href": "slides/slide2.html#summary",
-    "title": "Drawing plots with ggplot2",
+    "objectID": "slides/slide3.html#summary",
+    "href": "slides/slide3.html#summary",
+    "title": "Drawing multiple layers with ggplot2",
     "section": "Summary",
     "text": "Summary"
   },
   {
-    "objectID": "next-time.html",
-    "href": "next-time.html",
-    "title": "[ANU BDSI<br>workshop]{.tag-label} Data Visualisation with R [Part 1]{.part-label} ",
-    "section": "",
-    "text": "This website is brought to you by the ANU Biological Data Science Institute."
+    "objectID": "slides/slide1.html#teaching-team",
+    "href": "slides/slide1.html#teaching-team",
+    "title": "The Grammar of Graphics",
+    "section": "Teaching team",
+    "text": "Teaching team\n\nDr. Emi TanakaJeremias IvanAudrey PrasetyaRyan O’DonnellNils Kreuter\n\n\n\n\n\n Academic statistician passionate about data science and open source software\n\n\n Currently, Deputy Director of ANU Biological Data Science Institute and Executive Editor of R Journal\n\n\n PhD in Statistical Bioinformatics\n\n\n BSci (Adv Maths) with major in Mathematics and Statistics\n\n\n Loves data and coding\n\n\n         https://emitanaka.org      @statsgen      fosstodon.org/@emitanaka\n\n\n\n\n\n\n 2nd year of PhD student at ANU, working on phylogenomics methods to study hybridisation\n\n\n BSci in Bioinformatics\n\n\n Enjoy hiking and science\n\n\n jeremiasivan\n\n\n\n\n\n\n\n\n (Almost finishing) PhD student @Moritz Lab, E&E Division, RSB, ANU\n\n\n Working on historical biogeography of Indo-Australian birds\n\n\n BSc (Hons) with major in Zoology and Ecology & Conservation\n\n\n Loves games, art markets, and FOOD\n\n\n @goaudreymp\n\n\n https://linktr.ee/goaudreymp\n\n\n\n\n\n\n\n\n 3rd Year PhD student @ Linde Lab, E&E Division, RSB, ANU\n\n\n Investigating the evolution of the Australian orchid flora and associated funga\n\n\n MScSt (Biodiversity Science)\n\n\n Loves playing music, reading, nature\n\n\n @rpodonnell\n\n\n rpodonnell.github.io\n\n\n\n\n\n\n\n\n 2nd Year PhD student @ Sequeira Lab, E&E Division, RSB, ANU\n\n\n Identifying social, collective, or coordinated movement behaviour patterns in sharks using tracking data\n\n\n MSc (Marine Biology), BSc (Biology)\n\n\n Loves triathlon, hiking and the ocean\n\n\n @nilskreuter\n\n\n https://linktr.ee/nilskreuter"
+  },
+  {
+    "objectID": "slides/slide1.html#schedule",
+    "href": "slides/slide1.html#schedule",
+    "title": "The Grammar of Graphics",
+    "section": "🕙 Schedule",
+    "text": "🕙 Schedule\n\n\n\n\n\n\n\n\n\nTime\nContent\n\n\n\n\n10:00–10:30\nThe Grammar of Graphics\n\n\n10:30–11:00\nExercise 1\n\n\n11:00–11:30\nDrawing plots with ggplot2\n\n\n11:30–12:00\nExercise 2\n\n\n12:00–12:10\nBreak\n\n\n12:10–12:30\nDrawing multiple layers with ggplot2\n\n\n12:30–12:50\nExercise 3\n\n\n12:50–13:00\nWrap up"
+  },
+  {
+    "objectID": "slides/slide1.html#todays-learning-objectives",
+    "href": "slides/slide1.html#todays-learning-objectives",
+    "title": "The Grammar of Graphics",
+    "section": "Today’s learning objectives",
+    "text": "Today’s learning objectives\n\n\nUnderstand the concept of the grammar of graphics\n\n\nCreate basic plots using ggplot2\n\n\nConstruct plots with multiple layers in ggplot2\n\n\nAdjust scales and guides within ggplot2"
+  },
+  {
+    "objectID": "slides/slide1.html#current-learning-objective",
+    "href": "slides/slide1.html#current-learning-objective",
+    "title": "The Grammar of Graphics",
+    "section": " Current learning objective",
+    "text": "Current learning objective\n\n\nUnderstand the concept of the grammar of graphics\n\n\n-Create basic plots using ggplot2\n\n\n-Construct plots with multiple layers in ggplot2\n\n\n-Adjust scales and guides within ggplot2"
+  },
+  {
+    "objectID": "slides/slide1.html#catalogue-of-plot-types",
+    "href": "slides/slide1.html#catalogue-of-plot-types",
+    "title": "The Grammar of Graphics",
+    "section": "Catalogue of plot types",
+    "text": "Catalogue of plot types"
+  },
+  {
+    "objectID": "slides/slide1.html#summary",
+    "href": "slides/slide1.html#summary",
+    "title": "The Grammar of Graphics",
+    "section": "Summary",
+    "text": "Summary"
   },
   {
     "objectID": "index.html",
@@ -102,7 +137,7 @@
     "href": "index.html#preperation",
     "title": "Data Visualisation with R Part 1",
     "section": "🔧 Preperation",
-    "text": "🔧 Preperation\nPlease ensure that you download and install\n\nthe latest version of R,\nthe latest version of RStudio Desktop,\n(Optional) Slack (alternatively you can use the web version), and\nthe following packages by opening RStudio Desktop, then copy and paste the command below in the Console section, pushing Enter after pasting.\n\ninstall.packages(c(\"tidyverse\", \"rmarkdown\", \"agridat\", \"ggbeeswarm\", \"hexbin\"))\n If you are having issues, see also here or talk to the teaching team.\n\n\n\n\n\n\n Slack workspace (Optional)\n\n\n\nWe use Slack to facilitate communication between workshop participants and the teaching team.\n\nJoin ANU Learning Data Slack Community\n\n\nYou must use your ANU email to sign up.\nUse your full name.\nBy joining, you agree to abide by this code of conduct."
+    "text": "🔧 Preperation\nPlease ensure that you download and install\n\nthe latest version of R,\nthe latest version of RStudio Desktop,\n(Optional) Slack (alternatively you can use the web version), and\nthe following packages by opening RStudio Desktop, then copy and paste the command below in the Console section, pushing Enter after pasting.\n\ninstall.packages(c(\"tidyverse\", \"rmarkdown\", \"agridat\", \"ggbeeswarm\", \"hexbin\"))\n If you are having issues, see also here or talk to the teaching team.\n\n\n\n\n\n\n Slack workspace (Optional)\n\n\n\nWe use Slack to facilitate communication between workshop participants and the teaching team.\n\nJoin ANU Learning Data Slack Community\n\n\nYou must use your ANU email to sign up.\nUse your full name.\nBy joining, you agree to abide by this code of conduct.\nPlease don’t direct message the teaching team in Slack. Your questions are more likely to be answered in the Slack channels rather than in direct messages.\n\nPlease note that the teaching team does not necessarily actively monitor or attend to the Slack workspace outside of the workshop."
   },
   {
     "objectID": "index.html#teaching-team",
@@ -119,46 +154,67 @@
     "text": "Materials\nThe materials can be found here.\n   \nThese materials are shared under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License."
   },
   {
-    "objectID": "slides/slide1.html#teaching-team",
-    "href": "slides/slide1.html#teaching-team",
-    "title": "The Grammar of Graphics",
-    "section": "Teaching team",
-    "text": "Teaching team\n\nDr. Emi TanakaJeremias IvanAudrey PrasetyaRyan O’DonnellNils Kreuter\n\n\n\n\n\n Academic statistician passionate about data science and open source software\n\n\n Currently, Deputy Director of ANU Biological Data Science Institute and Executive Editor of R Journal\n\n\n PhD in Statistical Bioinformatics\n\n\n BSci (Adv Maths) with major in Mathematics and Statistics\n\n\n Loves data and coding\n\n\n         https://emitanaka.org      @statsgen      fosstodon.org/@emitanaka\n\n\n\n\n\n\n 2nd year of PhD student at ANU, working on phylogenomics methods to study hybridisation\n\n\n BSci in Bioinformatics\n\n\n Enjoy hiking and science\n\n\n jeremiasivan\n\n\n\n\n\n\n\n\n (Almost finishing) PhD student @Moritz Lab, E&E Division, RSB, ANU\n\n\n Working on historical biogeography of Indo-Australian birds\n\n\n BSc (Hons) with major in Zoology and Ecology & Conservation\n\n\n Loves games, art markets, and FOOD\n\n\n @goaudreymp\n\n\n https://linktr.ee/goaudreymp\n\n\n\n\n\n\n\n\n 3rd Year PhD student @ Linde Lab, E&E Division, RSB, ANU\n\n\n Investigating the evolution of the Australian orchid flora and associated funga\n\n\n MScSt (Biodiversity Science)\n\n\n Loves playing music, reading, nature\n\n\n @rpodonnell\n\n\n rpodonnell.github.io\n\n\n\n\n\n\n\n\n 2nd Year PhD student @ Sequeira Lab, E&E Division, RSB, ANU\n\n\n Identifying social, collective, or coordinated movement behaviour patterns in sharks using tracking data\n\n\n MSc (Marine Biology), BSc (Biology)\n\n\n Loves triathlon, hiking and the ocean\n\n\n @nilskreuter\n\n\n https://linktr.ee/nilskreuter"
+    "objectID": "next-time.html",
+    "href": "next-time.html",
+    "title": "[ANU BDSI<br>workshop]{.tag-label} Data Visualisation with R [Part 1]{.part-label} ",
+    "section": "",
+    "text": "This website is brought to you by the ANU Biological Data Science Institute."
   },
   {
-    "objectID": "slides/slide1.html#todays-learning-objectives",
-    "href": "slides/slide1.html#todays-learning-objectives",
-    "title": "The Grammar of Graphics",
-    "section": "Today’s learning objectives",
-    "text": "Today’s learning objectives\n\n\nUnderstand the concept of the grammar of graphics\n\n\nCreate basic plots using ggplot2\n\n\nConstruct plots with multiple layers in ggplot2\n\n\nAdjust scales and guides within ggplot2"
-  },
-  {
-    "objectID": "slides/slide1.html#current-learning-objective",
-    "href": "slides/slide1.html#current-learning-objective",
-    "title": "The Grammar of Graphics",
+    "objectID": "slides/slide2.html#current-learning-objective",
+    "href": "slides/slide2.html#current-learning-objective",
+    "title": "Drawing plots with ggplot2",
     "section": " Current learning objective",
-    "text": "Current learning objective\n\n\nUnderstand the concept of the grammar of graphics\n\n\n-Create basic plots using ggplot2\n\n\n-Construct plots with multiple layers in ggplot2\n\n\n-Adjust scales and guides within ggplot2"
+    "text": "Current learning objective\n\n\n-Understand the concept of the grammar of graphics\n\n\nCreate basic plots using ggplot2\n\n\n-Construct plots with multiple layers in ggplot2\n\n\n-Adjust scales and guides within ggplot2"
   },
   {
-    "objectID": "slides/slide1.html#summary",
-    "href": "slides/slide1.html#summary",
-    "title": "The Grammar of Graphics",
+    "objectID": "slides/slide2.html#summary",
+    "href": "slides/slide2.html#summary",
+    "title": "Drawing plots with ggplot2",
     "section": "Summary",
     "text": "Summary"
   },
   {
-    "objectID": "slides/slide3.html#current-learning-objective",
-    "href": "slides/slide3.html#current-learning-objective",
-    "title": "Drawing multiple layers with ggplot2",
-    "section": " Current learning objective",
-    "text": "Current learning objective\n\n\n-Understand the concept of the grammar of graphics\n\n\n-Create basic plots using ggplot2\n\n\nConstruct plots with multiple layers in ggplot2\n\n\n-Adjust scales and guides within ggplot2"
+    "objectID": "slides/slide-end.html#resources",
+    "href": "slides/slide-end.html#resources",
+    "title": "Wrap up",
+    "section": "Resources",
+    "text": "Resources\n\nggplot2: Elegant Graphics for Data Analysis 3rd edition\nFundamentals of Data Visualisation\nR Graphics Cookbook 2nd edition\nR for Data Science 2nd edition\nR4DS Online Learning Community\nAsk questions on Stack Overflow or Posit Community."
   },
   {
-    "objectID": "slides/slide3.html#summary",
-    "href": "slides/slide3.html#summary",
-    "title": "Drawing multiple layers with ggplot2",
-    "section": "Summary",
-    "text": "Summary"
+    "objectID": "slides/slide-end.html#local-resources",
+    "href": "slides/slide-end.html#local-resources",
+    "title": "Wrap up",
+    "section": "Local Resources",
+    "text": "Local Resources\n\nR-Ladies Canberra Meetup\nAsk the local experts such as at the\n\nBDSI Drop-In Sessions and\nANU Statistical Support Network.\n\nOnline Statistics Courses by ANU Statistical Support Network\nR Project Sharepoint Resources by ANU Statistical Support Network\nYou can continue to use the ANU Learning Data Slack Community to connect with each other."
+  },
+  {
+    "objectID": "slides/slide-end.html#feedback",
+    "href": "slides/slide-end.html#feedback",
+    "title": "Wrap up",
+    "section": "Feedback",
+    "text": "Feedback\n\n\n\n\nWhat worked or didn’t work for you?\nWhat other workshops?\nTell us at  workshop.bdsi@anu.edu.au\n\n\n\n\n\nanu-bdsi.github.io/workshop-data-vis-R1/"
+  },
+  {
+    "objectID": "slides/slide5.html#resources",
+    "href": "slides/slide5.html#resources",
+    "title": "Wrap up",
+    "section": "Resources",
+    "text": "Resources\n\nggplot2: Elegant Graphics for Data Analysis 3rd edition\nFundamentals of Data Visualisation\nR Graphics Cookbook 2nd edition\nR for Data Science 2nd edition\nR4DS Online Learning Community\nAsk questions on Stack Overflow or Posit Community."
+  },
+  {
+    "objectID": "slides/slide5.html#local-resources",
+    "href": "slides/slide5.html#local-resources",
+    "title": "Wrap up",
+    "section": "Local Resources",
+    "text": "Local Resources\n\nR-Ladies Canberra Meetup\nAsk the local experts such as at the\n\nBDSI Drop-In Sessions and\nANU Statistical Support Network.\n\nOnline Statistics Courses by ANU Statistical Support Network\nR Project Sharepoint Resources by ANU Statistical Support Network\nYou can continue to use the ANU Learning Data Slack Community to connect with each other."
+  },
+  {
+    "objectID": "slides/slide5.html#feedback",
+    "href": "slides/slide5.html#feedback",
+    "title": "Wrap up",
+    "section": "Feedback",
+    "text": "Feedback\n\nWhat worked or didn’t work for you?\nWhat other workshops?\nTell us at  workshop.bdsi@anu.edu.au\n\n\n\n\n\nanu-bdsi.github.io/workshop-data-vis-R1/"
   },
   {
     "objectID": "help.html",
