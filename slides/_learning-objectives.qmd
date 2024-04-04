@@ -1,4 +1,4 @@
 - Understand the concept of the grammar of graphics
 - Create basic plots using `ggplot2`
 - Construct plots with multiple layers in `ggplot2`
-- Adjust scales and guides within `ggplot2`
+- <strike>Adjust scales and guides within `ggplot2`</strike>
