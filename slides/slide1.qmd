@@ -1,5 +1,5 @@
 ---
-title: The Grammar of Graphics 
+title: Drawing plots with [ggplot2]{style='font-family:monospace;'}
 subtitle: "[[ANU BDSI<br>workshop]{.tag-label} Data Visualisation with R [Part 1]{.part-label}]{.tag-workshop}"
 format:
   anu-light-revealjs:
@@ -8,74 +8,27 @@ format:
     auto-stretch: false
     html-math-method: katex
     self-contained: true
-    css: 
-     - assets/custom.css
-     - assets/table.css
+    css: assets/custom.css
     footer: anu-bdsi.github.io/workshop-data-vis-R1/
 author: Emi Tanaka
 institute: Biological Data Science Institute
 date: 2024/04/10
 date-format: "D[th] MMMM YYYY"
-engine: knitr
+filters:
+  - webr
+execute: 
+  echo: true
+webr: 
+  show-startup-message: false  
+  packages: 
+    - tidyverse
+    - palmerpenguins
 ---
 
 
-# Welcome 👋
-
-```{r}
-#| include: false
-library(tidyverse)
-source("setup.R")
-```
-
-## Teaching team 
 
 
-`r photo_path <- ""`
-
-{{< include _team.qmd >}}
-
-# Workshop materials
-
-::: box
-
-All materials will be hosted at<br> [<https://anu-bdsi.github.io/workshop-data-vis-R1/>]{.f-subheadline target="_blank"}
-
-:::
-
-## 🕙 Schedule
-
-```{r}
-#| echo: false
-ex_tabset <- function(id) {
-  paste0("_Exercise ", id, "_")
-}
-
-slide_title <- function(id) {
- paste0("**", rmarkdown::yaml_front_matter(paste0("slide", id, ".qmd"))$title, "**")
-}
-
-start <- dmy_hms("03/04/2024 10.00.00")
-timedisplay <- function(duration) {
-  end <- start + duration(duration, units = "minutes")
-  ret <- paste0(format(start, "%H:%M"), "--", format(end, "%H:%M"))
-  start <<- end
-  ret
-}
-
-content |> 
-  rowwise() |> 
-  mutate(Time = timedisplay(time)) |> 
-  mutate(Content = switch(type,
-                              "exercise" = ex_tabset(content_id),
-                              "slide" = slide_title(content_id),
-                              "break" = "_Break_")) |>
-  select(Time, Content) |> 
-  knitr::kable()
-```
-
-
-## Today's learning objectives 
+## {{< fa crosshairs >}} Current learning objective
 
 ```{r, include = FALSE}
 library(tidyverse)
@@ -86,29 +39,385 @@ source("setup.R")
 ```{r}
 #| results: asis 
 #| echo: false
-learning_objectives()
-```
-
-
-
-## {{< fa crosshairs >}} Current learning objective
-
-
-```{r}
-#| results: asis 
-#| echo: false
 learning_objectives(1)
 ```
 
 
+## Summary of R graphics
+
+![](images/r-graphics-system.png)
+
+## Basic structure of `ggplot`
+
+![](images/ggplot-basic-str.png)
+
+- **data** as `data.frame`
+- a set of **aesthetic** mappings between variables in the data and visual properties
+- at least one **layer** which describes what to render
+
+
+## [Visualising]{.anu-black} distributions {background-color="#e3e3e3"}
+
+::: flex
+
+::: w-70
+
+![](images/dist-histogram.svg){style='width:19%;height:19%;'}  ![](images/dist-densityplot.svg){style='width:19%;height:19%;'} ![](images/dist-cumdensityplot.svg){style='width:19%;height:19%;'} ![](images/dist-qqplot.svg){style='width:19%;height:19%;'}
+
+![](images/dist-boxplots.svg){style='width:19%;height:19%;'} ![](images/dist-violinplots.svg){style='width:19%;height:19%;'} ![](images/dist-stripplots.svg){style='width:19%;height:19%;'} ![](images/dist-histograms.svg){style='width:19%;height:19%;'} ![](images/dist-densityplots.svg){style='width:19%;height:19%;'}
+
+:::
+
+
+::: w-30
+
+
+* `geom_histogram()`
+* `geom_density()`
+* `stat_ecdf()`
+* `stat_qq()`
+* `geom_boxplot()`
+* `geom_violin()`
+* `geom_jitter()`
+
+
+:::
+
+
+:::
+
+
+## Illustrative data <img src="images/penguins-logo.png" width="50px" style="vertical-align: middle;"> Palmer penguins
+
+`penguins` data is from the `palmerpenguins` 📦
+
+```{webr-r}
+library(palmerpenguins)
+str(penguins)
+```
+
+<img src="images/lter_penguins.png" width = "250px" style = "position:absolute;top:12%;right:8%;"/>
+<img src="images/culmen_depth.png" width = "450px" style = "position:absolute;bottom:15%;right:0%;border:2px solid black;"/>
+
+::: aside 
+Gorman KB, Williams TD, Fraser WR (2014). Ecological sexual dimorphism and environmental variability within a community of Antarctic penguins (genus Pygoscelis). PLoS ONE 9(3):e90081.
+:::
+
+
+## A histogram with `geom_histogram()`
+
+```{webr-r}
+library(ggplot2) # part of tidyverse
+ggplot(data = penguins, mapping = aes(x = bill_depth_mm)) +
+  geom_histogram() 
+
+# explore with different parameters
+ggplot(penguins, aes(bill_depth_mm)) + geom_histogram(bins = 40)
+ggplot(penguins, aes(bill_depth_mm)) + geom_histogram(binwidth = 1)
+```
+
+
+
+## Other layers for univariate data
+
+```{webr-r}
+p <- ggplot(penguins, aes(bill_depth_mm))
+
+p + geom_density() 
+p + geom_freqpoly()
+p + geom_boxplot()
+p + geom_violin(aes(y = ""))
+p + geom_dotplot()
+p + stat_bin()
+```
+
+
+## Available `geom` layers in `ggplot2` 
+
+```{r geom, echo=FALSE}
+geoms <- help.search("^geom_", package = "ggplot2")
+geoms$matches %>% 
+  select(Entry, Title) %>% 
+  group_by(Title) %>% 
+  mutate(col = paste0("C", 1:n())) %>% 
+  ungroup() %>% 
+  pivot_wider(names_from = col, values_from = Entry) %>% 
+  mutate(geom = paste(C1, C2, C3, C4, sep = ", "),
+         geom = gsub(", NA", "", geom)) %>% 
+  select(geom, Title) %>% 
+  DT::datatable(colnames = c("geom", "Description"),
+                rownames = FALSE,
+                options = list(dom = 'tp', ordering=F, scrollY = "500px", paging = FALSE)) 
+```
+
+## Available `stat` layers in `ggplot2`
+
+
+```{r stat, echo=FALSE}
+stats <- help.search("stat_", package = "ggplot2")
+stats$matches %>% 
+  select(Entry, Title) %>% 
+  group_by(Title) %>% 
+  mutate(col = paste0("C", 1:n())) %>% 
+  ungroup() %>% 
+  pivot_wider(names_from = col, values_from = Entry) %>% 
+  mutate(stats = paste(C1, C2, C3, sep = ", "),
+         stats = gsub(", NA", "", stats)) %>% 
+  select(stats, Title) %>% 
+  DT::datatable(colnames = c("stat", "Description"),
+                rownames = FALSE,
+                options = list(dom = 'tp', paging = FALSE, ordering=F, scrollY = "500px"))
+
+```
+
+
+
+
+
+## [Visualising]{.anu-black} bivariate relationships {background-color="#e3e3e3"}
+
+::: flex
+
+::: w-70
+
+![](images/rel-scatterplot.svg){style='width:19%;height:19%;'} ![](images/rel-smoothplot.svg){style='width:19%;height:19%;'} ![](images/rel-2dbin.svg){style='width:19%;height:19%;'} ![](images/rel-2dhex.svg){style='width:19%;height:19%;'}
+
+
+![](images/rel-slopegraph.svg){style='width:19%;height:19%;'} ![](images/corr-lineplot.svg){style='width:19%;height:19%;'}
+
+:::
+
+
+::: w-30
+
+
+* `geom_point()`
+* `geom_smooth()`
+* `geom_bin2d()`
+* `geom_hex()`
+* `geom_line()`
+
+
+:::
+
+
+:::
+
+
+## Aesthetic specifications 
+
+`vignette("ggplot2-specs")`
+
+* Aesthetic arguments for each layer are found in **documentation** <br>(e.g. `?geom_point`).
+
+. . . 
+
+* **Some common aesthetic specifications** are:
+
+::: {.flex}
+
+::: {.w-20 .fragment}
+
+`x` and `y`
+
+![](images/aes-pos.svg)
+
+:::
+
+::: {.w-20 .fragment}
+
+`alpha`
+
+![](images/aes-alpha.svg)
+
+:::
+
+::: {.w-20 .fragment}
+
+`color`
+
+![](images/aes-color.svg)
+
+:::
+
+::: {.w-20 .fragment}
+
+`fill`
+
+![](images/aes-fill.svg)
+
+:::
+
+::: {.w-20 .fragment}
+
+`size`
+
+![](images/aes-size.svg)
+
+:::
+
+
+:::
+
+
+
+## Example: a scatterplot with `geom_point()`
+
+```{webr-r}
+library(ggplot2)
+library(palmerpenguins)
+ggplot(penguins, 
+       aes(x = bill_depth_mm, 
+           y = bill_length_mm,
+           color = species,
+           size = body_mass_g)) +
+  geom_point()
+```
+
+* Notice that legends are automatically made for aesthetics
+
+## Aesthetic specification for points
+
+::: flex 
+
+::: w-60
+
+`shape`
+
+![](images/aes-shapes.svg)
+
+:::
+
+::: w-40
+
+`stroke` vs `size`
+
+![](images/aes-filled-shapes.svg)
+
+
+:::
+
+:::
+
+::: nonincremental
+
+* The default shape is "circle".
+* `stroke` and `fill` is only for the "filled" shapes.
+
+:::
+
+
+## Aesthetic specifications for lines
+
+::: flex
+
+::: {.w-20}
+
+`color`
+
+![](images/aes-line-color.svg)
+
+:::
+
+
+::: {.w-20}
+
+`linetype`
+
+![](images/aes-line-type.svg)
+
+:::
+
+::: {.w-20}
+
+`linewidth`
+
+![](images/aes-line-width.svg)
+
+:::
+
+
+
+::: {.w-20}
+
+`lineend`
+
+![](images/aes-line-end.svg)
+
+
+:::
+
+::: {.w-20}
+
+`linejoin`
+
+![](images/aes-line-join.svg)
+
+
+:::
+
+
+:::
+
+## Aesthetic or Attribute?
+
+```{webr-r}
+ggplot(penguins, aes(x = bill_depth_mm, y = bill_length_mm)) +
+  geom_point(aes(color = "dodgerblue"))
+```
+
+. . . 
+
+* When you supply values within `aes`, it assumes that it's a data variable. 
+* The string `"dodgerblue"` gets converted into a variable with one level and it gets colored by `ggplot`'s default color palette.
+
+
+
+## When your input is an attribute
+
+
+Don't put attributes inside `aes()`!
+
+```{webr-r}
+ggplot(penguins, aes(x = bill_depth_mm, y = bill_length_mm)) +
+  geom_point(color = "dodgerblue")
+```
+
+
+## Bonus tip: "as-is" operator
+
+* Use `I()` operator to mean "as-is" in aesthetic mapping.
+
+```{webr-r}
+ggplot(penguins, aes(x = bill_depth_mm, y = bill_length_mm)) +
+  geom_point(aes(color = I("dodgerblue")))
+```
+
+
+## Attributes are for layers
+
+
+* Attributes should be defined in specific layers.
+
+```{webr-r}
+ggplot(penguins, aes(x = bill_depth_mm, y = bill_length_mm),
+       color = "dodgerblue") +
+  geom_point()
+```
+
+
+* Notice how the points don't have the "dodgeblue" color.
+* Layers inherit data and the mapping from `ggplot()` but not attributes. 
+
+
+
 
 ## Summary
-
 
 # Exercise time {background-color="#F5EDDE"}
 
 
 [<i class='fas fa-laptop-code'></i>](https://anu-bdsi.github.io/workshop-intro-R/materials.html#tabset-1-1-tab){.f-headline}
 
-`r exercise_countdown(1)`
+`r exercise_countdown(2)`
 

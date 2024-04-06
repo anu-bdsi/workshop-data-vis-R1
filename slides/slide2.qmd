@@ -1,5 +1,5 @@
 ---
-title: Drawing plots with [ggplot2]{style='font-family:monospace;'}
+title: The Grammar of Graphics 
 subtitle: "[[ANU BDSI<br>workshop]{.tag-label} Data Visualisation with R [Part 1]{.part-label}]{.tag-workshop}"
 format:
   anu-light-revealjs:
@@ -8,19 +8,83 @@ format:
     auto-stretch: false
     html-math-method: katex
     self-contained: true
-    css: assets/custom.css
+    css: 
+     - assets/custom.css
+     - assets/table.css
     footer: anu-bdsi.github.io/workshop-data-vis-R1/
 author: Emi Tanaka
 institute: Biological Data Science Institute
 date: 2024/04/10
 date-format: "D[th] MMMM YYYY"
+engine: knitr
+filters:
+  - webr
+execute: 
+  echo: true
+webr: 
+  show-startup-message: false  
+  packages: 
+    - tidyverse
+    - palmerpenguins
 ---
 
 
+# Welcome 👋
+
+```{r}
+#| include: false
+library(tidyverse)
+source("setup.R")
+```
+
+## Teaching team 
 
 
+`r photo_path <- ""`
 
-## {{< fa crosshairs >}} Current learning objective
+{{< include _team.qmd >}}
+
+# Workshop materials
+
+::: box
+
+All materials will be hosted at<br> [<https://anu-bdsi.github.io/workshop-data-vis-R1/>]{.f-subheadline target="_blank"}
+
+:::
+
+## 🕙 Schedule
+
+```{r}
+#| echo: false
+ex_tabset <- function(id) {
+  paste0("_Exercise ", id, "_")
+}
+
+slide_title <- function(id) {
+ paste0("**", rmarkdown::yaml_front_matter(paste0("slide", id, ".qmd"))$title, "**")
+}
+
+start <- dmy_hms("03/04/2024 10.00.00")
+timedisplay <- function(duration) {
+  end <- start + duration(duration, units = "minutes")
+  ret <- paste0(format(start, "%H:%M"), "--", format(end, "%H:%M"))
+  start <<- end
+  ret
+}
+
+content |> 
+  rowwise() |> 
+  mutate(Time = timedisplay(time)) |> 
+  mutate(Content = switch(type,
+                              "exercise" = ex_tabset(content_id),
+                              "slide" = slide_title(content_id),
+                              "break" = "_Break_")) |>
+  select(Time, Content) |> 
+  knitr::kable()
+```
+
+
+## Today's learning objectives 
 
 ```{r, include = FALSE}
 library(tidyverse)
@@ -31,16 +95,406 @@ source("setup.R")
 ```{r}
 #| results: asis 
 #| echo: false
-learning_objectives(2)
+learning_objectives()
 ```
 
 
+
+## {{< fa crosshairs >}} Current learning objective
+
+
+```{r}
+#| results: asis 
+#| echo: false
+learning_objectives(2)
+```
+
+## Catalogue of plot types  {auto-animate=true}
+
+::: flex
+
+::: {.w-10}
+
+:::
+
+::: {.w-80}
+
+![](images/catalogue-histogram.png){width="19%" data-id="plotting"}
+![](images/catalogue-density.png){width="19%"}
+![](images/catalogue-boxplot.png){width="19%"}
+![](images/catalogue-violin.png){width="19%"}
+![](images/catalogue-dot.png){width="19%"}
+![](images/catalogue-barplot.png){width="19%"}
+![](images/catalogue-stacked-barplot.png){width="19%"}
+![](images/catalogue-grouped-barplot.png){width="19%"}
+![](images/catalogue-stacked-percentage-barplot.png){width="19%"}
+![](images/catalogue-scatter.png){width="19%"}
+![](images/catalogue-hex.png){width="19%"}
+![](images/catalogue-2d-density.png){width="19%"}
+![](images/catalogue-line.png){width="19%"}
+![](images/catalogue-heatmap.png){width="19%"}
+![](images/catalogue-map.png){width="19%"}
+
+:::
+
+::: {.w-10}
+
+:::
+
+
+:::
+
+
+## Plotting {auto-animate=true}
+
+<center>
+
+![](images/plotting.png){data-id="plotting"}
+
+</center>
+
+
+## Plotting more than one plot {auto-animate=true}
+
+<center>
+
+![](images/plotting-more.png){data-id="plotting"}
+
+</center>
+
+
+## Plotting layer {auto-animate=true}
+
+
+<center>
+
+![](images/plotting-layer.png){data-id="plotting"}
+
+</center>
+
+
+## Plotting small multiples {auto-animate=true}
+
+
+<center>
+
+![](images/plotting-multiple.png){data-id="plotting"}
+
+</center>
+
+
+## Plotting from a list of programs {auto-animate=true}
+
+
+::: flex
+
+::: {.w-50 }
+
+::: {style="overflow: scroll; height: 800px;"}
+
+<center>
+![](images/plot-recipes.png){data-id="plotting" width="100%"}
+</center>
+
+:::
+
+:::
+
+::: {.w-50 .pl3 .incremental}
+
+- One function <i class='fas fa-arrow-right'></i> One _complete_ plot type
+- The number of plots that can be drawn <center><i class='fas fa-equals'></i></center> The number of plot functions
+
+:::
+
+:::
+
+
+## The Grammar of Graphics
+
+::: incremental
+
+- In linguistics, we combine finite number of words to construct vast number of sentences under a shared understanding of the grammar.
+- Wilkinson (2005) introduced "the grammar of graphics" as a paradigm to describe plots by combining a finite number of components.
+- Wickham (2010) interpreted the grammar of graphics into the `ggplot2` R package (as part of his PhD project) 
+- `ggplot2` is widely used in the scientific literature and even in newspapers!
+- The grammar of graphics paradigm is also interpreted in other programming languages such as Python (e.g., `plotnine`), Julia (e.g., `VegaLite.jl`), and JavaScript (e.g., `Vega`).
+
+:::
+
+
+::: aside 
+
+L. Wilkinson, The Grammar of Graphics, 2nd ed., vol. 49. in Statistics and computing, no. 1, vol. 49. New York: Springer, 2005. doi: 10.1198/tech.2007.s456.
+
+H. Wickham, “A Layered Grammar of Graphics,” Journal of Computational and Graphical Statistics, vol. 19, no. 1, pp. 3–28, Jan. 2010, doi: 10.1198/jcgs.2009.07098.
+
+
+:::
+
+
+## Deconstructing histogram {auto-animate=true}
+
+![](images/deconstruct-histogram.png){data-id="plotting" width="100%"}
+
+## Deconstructing histogram {auto-animate=true}
+
+![](images/deconstruct-histogram2.png){data-id="plotting" width="100%"}
+
+## Deconstructing barplot {auto-animate=true}
+
+![](images/deconstruct-barplot.png){data-id="plotting" width="100%"}
+
+## Deconstructing barplot {auto-animate=true}
+
+![](images/deconstruct-barplot2.png){data-id="plotting" width="100%"}
+
+## [Visualising]{.anu-black} amounts [and]{.anu-black} proportions {background-color="#e3e3e3"}
+
+::: flex
+
+::: w-70
+
+![](images/amount-barplot.svg){style='width:19%;height:19%;'} ![](images/amount-scatterplot.svg){style='width:19%;height:19%;'} ![](images/amount-grouped-barplot.svg){style='width:19%;height:19%;'}
+![](images/amount-stacked-barplot.svg){style='width:19%;height:19%;'} ![](images/amount-heatmap.svg){style='width:19%;height:19%;'}
+
+![](images/prop-piechart.svg){style='width:19%;height:19%;'} ![](images/prop-stacked-perc-barplot.svg){style='width:19%;height:19%;'} ![](images/prop-stacked-density-plot.svg){style='width:19%;height:19%;'}
+
+
+:::
+
+::: w-30
+
+* `geom_bar()`
+* `geom_col()`
+* `geom_point()`
+* `geom_tile()`
+* `geom_density()`
+
+:::
+
+:::
+
+
+
+
+# <i class="fas fa-arrows-alt"></i> Position adjustments {background-color="#F5EDDE"}
+
+
+## A barplot with `geom_bar()` [with a categorical variable]{.f3}
+
+```{webr-r}
+library(palmerpenguins)
+ggplot(penguins, aes(island)) +
+  geom_bar()
+```
+
+* If you have a categorical variable, then you usually want to study the frequency of its categories. 
+* Here the `stat = "count"` is computing the frequencies for each category for you.  
+
+
+## A barplot with `geom_bar()` [with a discrete numerical variable]{.f3}
+
+::: flex
+
+::: w-60
+
+```{webr-r}
+penguins %>%
+  # for demonstration, change 2009 to 2010
+  mutate(year = case_match(year,
+                           2009 ~ 2010,
+                           .default = year)) %>%
+  ggplot(aes(x = year)) +
+  geom_bar()
+```
+
+:::
+
+::: w-40
+
+* Supplying a numerical variable to the x-axis results in a continuous scale.
+* If you want to study each level in a discrete variable, then you may want to convert the discrete variable to a factor instead `x = factor(year)`. 
+
+:::
+
+:::
+
+
+
+## Summary data 
+
+* Sometimes your input data may already contain pre-computed counts. 
+
+```{webr-r}
+penguins_summary <- penguins %>% 
+  count(sex, species)
+penguins_summary
+```
+
+## A barplot with `geom_col()` 
+
+
+
+. . . 
+
+* In this case, you don't need `stat = "count"` to do the counting for you and use `geom_col()` instead.
+
+. . . 
+
+```{webr-r}
+ggplot(penguins_summary, 
+       aes(x = species, y = n)) +
+  geom_col() 
+```
+
+
+* This is essential a short hand for `geom_bar(stat = "identity")` where `stat = "identity"` means that you will take the value as supplied without any statistical transformation.
+
+## A stacked barplot with `"stack"`
+
+::: flex
+
+::: {.w-65 .pr3}
+
+```{webr-r}
+penguins_summary
+```
+
+
+:::
+
+
+::: w-35
+
+```{webr-r}
+ggplot(penguins_summary, 
+       aes(x = species, y = n)) +
+  geom_col() 
+```
+
+:::
+
+:::
+
+. . . 
+
+
+::: flex
+
+::: w-65
+
+
+```{webr-r}
+ggplot(penguins_summary, 
+       aes(x = species, y = n, fill = sex)) +
+  geom_col(# default position
+           position = "stack") 
+```
+
+:::
+
+
+::: w-35
+
+
+
+:::
+
+:::
+
+
+
+
+
+
+## A grouped barplot with `"dodge"`
+
+::: flex
+
+::: w-65
+
+```{webr-r}
+ggplot(penguins_summary,
+       aes(species, n, fill = sex)) +
+  geom_col(position = "dodge")
+```
+
+::: fragment
+
+* `"dodge"` = `position_dodge()`
+
+:::
+
+:::
+
+::: w-35
+
+
+:::
+
+
+:::
+
+
+
+. . . 
+
+::: flex
+
+::: w-65
+
+```{webr-r}
+ggplot(penguins_summary, 
+       aes(species, n, fill = sex)) +
+  geom_col(
+    position = position_dodge(preserve = "single")) +
+  scale_fill_discrete(drop = FALSE)
+```
+
+:::
+
+::: w-35
+
+
+
+:::
+
+
+:::
+
+
+## Another grouped barplot with `"dodge2"`
+
+```{webr-r}
+ggplot(penguins_summary, 
+       aes(species, n, fill = sex)) +
+  geom_col(position = position_dodge2(padding = 0.1))
+```
+
+* `"dodge2"` uses a different algorithm to recalculate the x-values with an option to add a padding between geometric objects
+
+## Stacked percentage barplot with `"fill"`
+
+```{webr-r}
+ggplot(penguins_summary, 
+       aes(species, n, fill = sex)) +
+  geom_col(position = "fill")
+```
+
+
+* If you want to compare the percentages between the different `x`, then `position = "fill"` can be handy.
+
+
+
+
 ## Summary
+
 
 # Exercise time {background-color="#F5EDDE"}
 
 
 [<i class='fas fa-laptop-code'></i>](https://anu-bdsi.github.io/workshop-intro-R/materials.html#tabset-1-1-tab){.f-headline}
 
-`r exercise_countdown(2)`
+`r exercise_countdown(1)`
 

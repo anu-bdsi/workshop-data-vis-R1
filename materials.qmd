@@ -14,6 +14,10 @@ filters:
   - webr2
 webr: 
   show-startup-message: false    
+  packages:
+    - palmerpenguins
+    - tidyverse
+    - agridat
 ---
 
 ```{r setup, include = FALSE}
@@ -103,11 +107,7 @@ content |>
 
 `r checklist(LOs[3])`
 
-## Exercise 4
 
-{{< include "exercises/_exercise4.qmd" >}}
-
-`r checklist(LOs[4])`
 
 
 :::
