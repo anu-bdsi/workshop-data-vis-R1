@@ -217,7 +217,7 @@ learning_objectives(2)
 - In linguistics, we combine finite number of words to construct vast number of sentences under a shared understanding of the grammar.
 - Wilkinson (2005) introduced "the grammar of graphics" as a paradigm to describe plots by combining a finite number of components.
 - Wickham (2010) interpreted the grammar of graphics into the `ggplot2` R package (as part of his PhD project) 
-- `ggplot2` is widely used in the scientific literature and even in newspapers!
+
 - The grammar of graphics paradigm is also interpreted in other programming languages such as Python (e.g., `plotnine`), Julia (e.g., `VegaLite.jl`), and JavaScript (e.g., `Vega`).
 
 :::
