@@ -63,6 +63,62 @@
     "text": "Current learning objective\n\n\n-Create basic plots using ggplot2\n\n\n-Understand the concept of the grammar of graphics\n\n\nConstruct plots with multiple layers in ggplot2\n\n\n-Adjust scales and guides within ggplot2"
   },
   {
+    "objectID": "slides/slide3.html#layering-plots",
+    "href": "slides/slide3.html#layering-plots",
+    "title": "Drawing multiple layers with ggplot2",
+    "section": "Layering plots",
+    "text": "Layering plots\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nYou can add more than one layer.\nThe order of layer matters."
+  },
+  {
+    "objectID": "slides/slide3.html#inheriting-data-and-mapping",
+    "href": "slides/slide3.html#inheriting-data-and-mapping",
+    "title": "Drawing multiple layers with ggplot2",
+    "section": "Inheriting data and mapping",
+    "text": "Inheriting data and mapping\n\nA layer inherits the data and mapping from the initialised ggplot object by default"
+  },
+  {
+    "objectID": "slides/slide3.html#layer-specific-data-and-aesthetic-mapping",
+    "href": "slides/slide3.html#layer-specific-data-and-aesthetic-mapping",
+    "title": "Drawing multiple layers with ggplot2",
+    "section": "Layer-specific data and aesthetic mapping",
+    "text": "Layer-specific data and aesthetic mapping\n\n\nFor each layer, aesthetic and/or data can be overwritten"
+  },
+  {
+    "objectID": "slides/slide3.html#illustrative-data-iowa-farmland-values-by-county",
+    "href": "slides/slide3.html#illustrative-data-iowa-farmland-values-by-county",
+    "title": "Drawing multiple layers with ggplot2",
+    "section": "Illustrative data 🚜 Iowa farmland values by county",
+    "text": "Illustrative data 🚜 Iowa farmland values by county\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "slides/slide3.html#layer-specific-aesthetic",
+    "href": "slides/slide3.html#layer-specific-aesthetic",
+    "title": "Drawing multiple layers with ggplot2",
+    "section": "Layer specific aesthetic",
+    "text": "Layer specific aesthetic\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "slides/slide3.html#layer-specific-data",
+    "href": "slides/slide3.html#layer-specific-data",
+    "title": "Drawing multiple layers with ggplot2",
+    "section": "Layer specific data",
+    "text": "Layer specific data\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "slides/slide3.html#layer-specific-data-as-a-function-of-inherited-data",
+    "href": "slides/slide3.html#layer-specific-data-as-a-function-of-inherited-data",
+    "title": "Drawing multiple layers with ggplot2",
+    "section": "Layer specific data as a function of inherited data",
+    "text": "Layer specific data as a function of inherited data\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "slides/slide3.html#annotation-layer",
+    "href": "slides/slide3.html#annotation-layer",
+    "title": "Drawing multiple layers with ggplot2",
+    "section": "Annotation layer",
+    "text": "Annotation layer\n\nannotate() allows you to add elements to plots without a data.frame\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
     "objectID": "slides/slide3.html#summary",
     "href": "slides/slide3.html#summary",
     "title": "Drawing multiple layers with ggplot2",
@@ -82,6 +138,13 @@
     "title": "Drawing plots with ggplot2",
     "section": "Summary of R graphics",
     "text": "Summary of R graphics"
+  },
+  {
+    "objectID": "slides/slide1.html#ggplot2-r-package",
+    "href": "slides/slide1.html#ggplot2-r-package",
+    "title": "Drawing plots with ggplot2",
+    "section": "ggplot2 R package",
+    "text": "ggplot2 R package\n\nggplot2 R package is part of the tidyverse suite of R packages\nggplot2 is widely used by the scientific community and even by news outlets (e.g. Financial Times and BBC)"
   },
   {
     "objectID": "slides/slide1.html#basic-structure-of-ggplot",
@@ -326,7 +389,7 @@
     "href": "slides/slide2.html#the-grammar-of-graphics",
     "title": "The Grammar of Graphics",
     "section": "The Grammar of Graphics",
-    "text": "The Grammar of Graphics\n\n\nIn linguistics, we combine finite number of words to construct vast number of sentences under a shared understanding of the grammar.\nWilkinson (2005) introduced “the grammar of graphics” as a paradigm to describe plots by combining a finite number of components.\nWickham (2010) interpreted the grammar of graphics into the ggplot2 R package (as part of his PhD project)\nggplot2 is widely used in the scientific literature and even in newspapers!\nThe grammar of graphics paradigm is also interpreted in other programming languages such as Python (e.g., plotnine), Julia (e.g., VegaLite.jl), and JavaScript (e.g., Vega).\n\n\n\n\nL. Wilkinson, The Grammar of Graphics, 2nd ed., vol. 49. in Statistics and computing, no. 1, vol. 49. New York: Springer, 2005. doi: 10.1198/tech.2007.s456.\nH. Wickham, “A Layered Grammar of Graphics,” Journal of Computational and Graphical Statistics, vol. 19, no. 1, pp. 3–28, Jan. 2010, doi: 10.1198/jcgs.2009.07098."
+    "text": "The Grammar of Graphics\n\n\nIn linguistics, we combine finite number of words to construct vast number of sentences under a shared understanding of the grammar.\nWilkinson (2005) introduced “the grammar of graphics” as a paradigm to describe plots by combining a finite number of components.\nWickham (2010) interpreted the grammar of graphics into the ggplot2 R package (as part of his PhD project)\nThe grammar of graphics paradigm is also interpreted in other programming languages such as Python (e.g., plotnine), Julia (e.g., VegaLite.jl), and JavaScript (e.g., Vega).\n\n\n\n\nL. Wilkinson, The Grammar of Graphics, 2nd ed., vol. 49. in Statistics and computing, no. 1, vol. 49. New York: Springer, 2005. doi: 10.1198/tech.2007.s456.\nH. Wickham, “A Layered Grammar of Graphics,” Journal of Computational and Graphical Statistics, vol. 19, no. 1, pp. 3–28, Jan. 2010, doi: 10.1198/jcgs.2009.07098."
   },
   {
     "objectID": "slides/slide2.html#deconstructing-histogram",
