@@ -25,7 +25,7 @@
     "href": "materials.html#schedule",
     "title": "Materials",
     "section": "🕙 Schedule",
-    "text": "🕙 Schedule\n\n\n\n\n\nTime\nContent\n\n\n\n\n10:00–10:30\nThe Grammar of Graphics\n\n\n10:30–11:00\nExercise 1\n\n\n11:00–11:30\nDrawing plots with ggplot2\n\n\n11:30–12:00\nExercise 2\n\n\n12:00–12:10\nBreak\n\n\n12:10–12:30\nDrawing multiple layers with ggplot2\n\n\n12:30–12:50\nExercise 3\n\n\n12:50–13:00\nWrap up"
+    "text": "🕙 Schedule\n\n\n\n\n\nTime\nContent\n\n\n\n\n10:00–10:30\nDrawing plots with ggplot2\n\n\n10:30–11:00\nExercise 1\n\n\n11:00–11:30\nThe Grammar of Graphics\n\n\n11:30–12:00\nExercise 2\n\n\n12:00–12:10\nBreak\n\n\n12:10–12:30\nDrawing multiple layers with ggplot2\n\n\n12:30–12:50\nExercise 3\n\n\n12:50–13:00\nWrap up"
   },
   {
     "objectID": "materials.html#resources",
@@ -39,14 +39,14 @@
     "href": "materials.html#exercises",
     "title": "Materials",
     "section": "🏋️‍♀️ Exercises",
-    "text": "🏋️‍♀️ Exercises\n\nExercise 1Exercise 2Exercise 3Exercise 4\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\n\nReflect on learning objectives\n\n\n\nYou should be able to:\n\n\n Understand the concept of the grammar of graphics\n\n\n\n\n\n\n\n\n\n\n\n\nReflect on learning objectives\n\n\n\nYou should be able to:\n\n\n Create basic plots using ggplot2\n\n\n\n\n\n\n\n\n\n\n\n\nReflect on learning objectives\n\n\n\nYou should be able to:\n\n\n Construct plots with multiple layers in ggplot2\n\n\n\n\n\n\n\n\n\n\n\n\nReflect on learning objectives\n\n\n\nYou should be able to:\n\n\n Adjust scales and guides within ggplot2"
+    "text": "🏋️‍♀️ Exercises\n\nExercise 1Exercise 2Exercise 3\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\n\nReflect on learning objectives\n\n\n\nYou should be able to:\n\n\n Create basic plots using ggplot2\n\n\n\n\n\n\n\n\n\n\n\n\nReflect on learning objectives\n\n\n\nYou should be able to:\n\n\n Understand the concept of the grammar of graphics\n\n\n\n\n\n\n\n\n\n\n\n\nReflect on learning objectives\n\n\n\nYou should be able to:\n\n\n Construct plots with multiple layers in ggplot2"
   },
   {
     "objectID": "slides/slide4.html#current-learning-objective",
     "href": "slides/slide4.html#current-learning-objective",
     "title": "Guide and scale with ggplot2",
     "section": " Current learning objective",
-    "text": "Current learning objective\n\n\n-Understand the concept of the grammar of graphics\n\n\n-Create basic plots using ggplot2\n\n\n-Construct plots with multiple layers in ggplot2\n\n\nAdjust scales and guides within ggplot2"
+    "text": "Current learning objective\n\n\n-Create basic plots using ggplot2\n\n\n-Understand the concept of the grammar of graphics\n\n\n-Construct plots with multiple layers in ggplot2\n\n\nAdjust scales and guides within ggplot2"
   },
   {
     "objectID": "slides/slide4.html#summary",
@@ -60,7 +60,7 @@
     "href": "slides/slide3.html#current-learning-objective",
     "title": "Drawing multiple layers with ggplot2",
     "section": " Current learning objective",
-    "text": "Current learning objective\n\n\n-Understand the concept of the grammar of graphics\n\n\n-Create basic plots using ggplot2\n\n\nConstruct plots with multiple layers in ggplot2\n\n\n-Adjust scales and guides within ggplot2"
+    "text": "Current learning objective\n\n\n-Create basic plots using ggplot2\n\n\n-Understand the concept of the grammar of graphics\n\n\nConstruct plots with multiple layers in ggplot2\n\n\n-Adjust scales and guides within ggplot2"
   },
   {
     "objectID": "slides/slide3.html#summary",
@@ -70,44 +70,135 @@
     "text": "Summary"
   },
   {
-    "objectID": "slides/slide1.html#teaching-team",
-    "href": "slides/slide1.html#teaching-team",
-    "title": "The Grammar of Graphics",
-    "section": "Teaching team",
-    "text": "Teaching team\n\nDr. Emi TanakaJeremias IvanAudrey PrasetyaRyan O’DonnellNils Kreuter\n\n\n\n\n\n Academic statistician passionate about data science and open source software\n\n\n Currently, Deputy Director of ANU Biological Data Science Institute and Executive Editor of R Journal\n\n\n PhD in Statistical Bioinformatics\n\n\n BSci (Adv Maths) with major in Mathematics and Statistics\n\n\n Loves data and coding\n\n\n         https://emitanaka.org      @statsgen      fosstodon.org/@emitanaka\n\n\n\n\n\n\n 2nd year of PhD student at ANU, working on phylogenomics methods to study hybridisation\n\n\n BSci in Bioinformatics\n\n\n Enjoy hiking and science\n\n\n jeremiasivan\n\n\n\n\n\n\n\n\n (Almost finishing) PhD student @Moritz Lab, E&E Division, RSB, ANU\n\n\n Working on historical biogeography of Indo-Australian birds\n\n\n BSc (Hons) with major in Zoology and Ecology & Conservation\n\n\n Loves games, art markets, and FOOD\n\n\n @goaudreymp\n\n\n https://linktr.ee/goaudreymp\n\n\n\n\n\n\n\n\n 3rd Year PhD student @ Linde Lab, E&E Division, RSB, ANU\n\n\n Investigating the evolution of the Australian orchid flora and associated funga\n\n\n MScSt (Biodiversity Science)\n\n\n Loves playing music, reading, nature\n\n\n @rpodonnell\n\n\n rpodonnell.github.io\n\n\n\n\n\n\n\n\n 2nd Year PhD student @ Sequeira Lab, E&E Division, RSB, ANU\n\n\n Identifying social, collective, or coordinated movement behaviour patterns in sharks using tracking data\n\n\n MSc (Marine Biology), BSc (Biology)\n\n\n Loves triathlon, hiking and the ocean\n\n\n @nilskreuter\n\n\n https://linktr.ee/nilskreuter"
-  },
-  {
-    "objectID": "slides/slide1.html#schedule",
-    "href": "slides/slide1.html#schedule",
-    "title": "The Grammar of Graphics",
-    "section": "🕙 Schedule",
-    "text": "🕙 Schedule\n\n\n\n\n\n\n\n\n\nTime\nContent\n\n\n\n\n10:00–10:30\nThe Grammar of Graphics\n\n\n10:30–11:00\nExercise 1\n\n\n11:00–11:30\nDrawing plots with ggplot2\n\n\n11:30–12:00\nExercise 2\n\n\n12:00–12:10\nBreak\n\n\n12:10–12:30\nDrawing multiple layers with ggplot2\n\n\n12:30–12:50\nExercise 3\n\n\n12:50–13:00\nWrap up"
-  },
-  {
-    "objectID": "slides/slide1.html#todays-learning-objectives",
-    "href": "slides/slide1.html#todays-learning-objectives",
-    "title": "The Grammar of Graphics",
-    "section": "Today’s learning objectives",
-    "text": "Today’s learning objectives\n\n\nUnderstand the concept of the grammar of graphics\n\n\nCreate basic plots using ggplot2\n\n\nConstruct plots with multiple layers in ggplot2\n\n\nAdjust scales and guides within ggplot2"
-  },
-  {
     "objectID": "slides/slide1.html#current-learning-objective",
     "href": "slides/slide1.html#current-learning-objective",
-    "title": "The Grammar of Graphics",
+    "title": "Drawing plots with ggplot2",
     "section": " Current learning objective",
-    "text": "Current learning objective\n\n\nUnderstand the concept of the grammar of graphics\n\n\n-Create basic plots using ggplot2\n\n\n-Construct plots with multiple layers in ggplot2\n\n\n-Adjust scales and guides within ggplot2"
+    "text": "Current learning objective\n\n\nCreate basic plots using ggplot2\n\n\n-Understand the concept of the grammar of graphics\n\n\n-Construct plots with multiple layers in ggplot2\n\n\n-Adjust scales and guides within ggplot2"
   },
   {
-    "objectID": "slides/slide1.html#catalogue-of-plot-types",
-    "href": "slides/slide1.html#catalogue-of-plot-types",
-    "title": "The Grammar of Graphics",
-    "section": "Catalogue of plot types",
-    "text": "Catalogue of plot types"
+    "objectID": "slides/slide1.html#summary-of-r-graphics",
+    "href": "slides/slide1.html#summary-of-r-graphics",
+    "title": "Drawing plots with ggplot2",
+    "section": "Summary of R graphics",
+    "text": "Summary of R graphics"
+  },
+  {
+    "objectID": "slides/slide1.html#basic-structure-of-ggplot",
+    "href": "slides/slide1.html#basic-structure-of-ggplot",
+    "title": "Drawing plots with ggplot2",
+    "section": "Basic structure of ggplot",
+    "text": "Basic structure of ggplot\n\n\ndata as data.frame\na set of aesthetic mappings between variables in the data and visual properties\nat least one layer which describes what to render"
+  },
+  {
+    "objectID": "slides/slide1.html#visualising-distributions",
+    "href": "slides/slide1.html#visualising-distributions",
+    "title": "Drawing plots with ggplot2",
+    "section": "Visualising distributions",
+    "text": "Visualising distributions\n\n\n\n\n  \n\n\n\n  \n    \n  \n\n\n\n\n\n  \n    \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHISTOGRAM\n\n \n\n  \n\n\n\n  \n    \n  \n\n\n\n\n\n  \n    \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDENSITY PLOT\n\n \n\n  \n\n\n\n  \n    \n  \n\n\n\n\n\n  \n    \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCUMULATIVE\nDENSITY PLOT\n\n \n\n  \n\n\n\n  \n    \n  \n\n\n\n\n\n  \n    \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQ-Q PLOT\n\n\n\n\n  \n\n\n\n  \n    \n  \n\n\n\n\n\n  \n    \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBOXPLOTS\n\n \n\n  \n\n\n\n  \n    \n  \n\n\n\n\n\n  \n    \n  \n\n\n\n\n\n\n\n\n\n\n\n\nVIOLIN PLOTS\n\n \n\n  \n\n\n\n  \n    \n  \n\n\n\n\n\n  \n    \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSTRIP PLOTS\n\n \n\n  \n\n\n\n  \n    \n  \n\n\n\n\n\n  \n    \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSTACKED\nHISTOGRAMS\n\n \n\n  \n\n\n\n  \n    \n  \n\n\n\n\n\n  \n    \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOVERLAPPING\nDENSITY PLOTS\n\n\n\n\n\ngeom_histogram()\ngeom_density()\nstat_ecdf()\nstat_qq()\ngeom_boxplot()\ngeom_violin()\ngeom_jitter()"
+  },
+  {
+    "objectID": "slides/slide1.html#illustrative-data-palmer-penguins",
+    "href": "slides/slide1.html#illustrative-data-palmer-penguins",
+    "title": "Drawing plots with ggplot2",
+    "section": "Illustrative data  Palmer penguins",
+    "text": "Illustrative data  Palmer penguins\npenguins data is from the palmerpenguins 📦\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n \n\n\nGorman KB, Williams TD, Fraser WR (2014). Ecological sexual dimorphism and environmental variability within a community of Antarctic penguins (genus Pygoscelis). PLoS ONE 9(3):e90081."
+  },
+  {
+    "objectID": "slides/slide1.html#a-histogram-with-geom_histogram",
+    "href": "slides/slide1.html#a-histogram-with-geom_histogram",
+    "title": "Drawing plots with ggplot2",
+    "section": "A histogram with geom_histogram()",
+    "text": "A histogram with geom_histogram()\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "slides/slide1.html#other-layers-for-univariate-data",
+    "href": "slides/slide1.html#other-layers-for-univariate-data",
+    "title": "Drawing plots with ggplot2",
+    "section": "Other layers for univariate data",
+    "text": "Other layers for univariate data\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "slides/slide1.html#available-geom-layers-in-ggplot2",
+    "href": "slides/slide1.html#available-geom-layers-in-ggplot2",
+    "title": "Drawing plots with ggplot2",
+    "section": "Available geom layers in ggplot2",
+    "text": "Available geom layers in ggplot2"
+  },
+  {
+    "objectID": "slides/slide1.html#available-stat-layers-in-ggplot2",
+    "href": "slides/slide1.html#available-stat-layers-in-ggplot2",
+    "title": "Drawing plots with ggplot2",
+    "section": "Available stat layers in ggplot2",
+    "text": "Available stat layers in ggplot2"
+  },
+  {
+    "objectID": "slides/slide1.html#visualising-bivariate-relationships",
+    "href": "slides/slide1.html#visualising-bivariate-relationships",
+    "title": "Drawing plots with ggplot2",
+    "section": "Visualising bivariate relationships",
+    "text": "Visualising bivariate relationships\n\n\n\n\n  \n\n\n\n  \n    \n  \n\n\n\n\n\n  \n    \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSCATTER PLOT\n\n \n\n  \n\n\n\n  \n    \n  \n\n\n\n\n\n  \n    \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSMOOTHED\nLINE PLOT\n\n \n\n  \n\n\n\n  \n    \n  \n\n\n\n\n\n  \n    \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHEATMAP OF\n2D BIN COUNTS\n\n \n\n  \n\n\n\n  \n    \n  \n\n\n\n\n\n  \n    \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHEXAGONAL\nHEATMAP OF\n2D BIN COUNTS\n\n\n\n\n  \n\n\n\n  \n    \n  \n\n\n\n\n\n  \n    \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSLOPE GRAPH\n\n \n\n\n\ngeom_point()\ngeom_smooth()\ngeom_bin2d()\ngeom_hex()\ngeom_line()"
+  },
+  {
+    "objectID": "slides/slide1.html#aesthetic-specifications",
+    "href": "slides/slide1.html#aesthetic-specifications",
+    "title": "Drawing plots with ggplot2",
+    "section": "Aesthetic specifications",
+    "text": "Aesthetic specifications\nvignette(\"ggplot2-specs\")\n\nAesthetic arguments for each layer are found in documentation (e.g. ?geom_point).\n\n\n\nSome common aesthetic specifications are:\n\n\n\nx and y\n\n\n  \n\n\n\n  \n    \n  \n\n\n\n\n\n  \n    \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nx\ny\n\n\n\n\nalpha\n\n\n  \n\n\n\n  \n    \n  \n\n\n\n\n\n  \n    \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncolor\n\n\n  \n\n\n\n  \n    \n  \n\n\n\n\n\n  \n    \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nfill\n\n\n  \n\n\n\n  \n    \n  \n\n\n\n\n\n  \n    \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nsize"
+  },
+  {
+    "objectID": "slides/slide1.html#example-a-scatterplot-with-geom_point",
+    "href": "slides/slide1.html#example-a-scatterplot-with-geom_point",
+    "title": "Drawing plots with ggplot2",
+    "section": "Example: a scatterplot with geom_point()",
+    "text": "Example: a scatterplot with geom_point()\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nNotice that legends are automatically made for aesthetics"
+  },
+  {
+    "objectID": "slides/slide1.html#aesthetic-specification-for-points",
+    "href": "slides/slide1.html#aesthetic-specification-for-points",
+    "title": "Drawing plots with ggplot2",
+    "section": "Aesthetic specification for points",
+    "text": "Aesthetic specification for points\n\n\nshape\n\n\n  \n\n\n\n  \n    \n  \n\n\n\n\n\n  \n    \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncircle\ncircle open\ncircle filled\ncircle cross\ncircle plus\ncircle small\nbullet\nsquare\nsquare open\nsquare filled\nsquare cross\nsquare plus\nsquare triangle\ndiamond\ndiamond open\ndiamond filled\ndiamond plus\ntriangle\ntriangle open\ntriangle filled\ntriangle square\ntriangle down open\ntriangle down filled\nplus\ncross\nasterisk\n\n\n\n\n\n\nstroke vs size\n\n\n  \n\n\n\n  \n    \n  \n\n\n\n\n\n  \n    \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n0\n2\n4\n6\n\n\n\n\n\n\n\n\n\n0\n2\n4\n6\nsize\nstroke\n\n\n\n\n\n\nThe default shape is “circle”.\nstroke and fill is only for the “filled” shapes."
+  },
+  {
+    "objectID": "slides/slide1.html#aesthetic-specifications-for-lines",
+    "href": "slides/slide1.html#aesthetic-specifications-for-lines",
+    "title": "Drawing plots with ggplot2",
+    "section": "Aesthetic specifications for lines",
+    "text": "Aesthetic specifications for lines\n\n\ncolor\n\n\n  \n\n\n\n  \n    \n  \n\n\n\n\n\n  \n    \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\nlinetype\n\n\n  \n\n\n\n  \n    \n  \n\n\n\n\n\n  \n    \n  \n\n\n\n\n\n\n\n\n0 = blank\n1 = solid\n2 = dashed\n3 = dotted\n4 = dotdash\n5 = longdash\n6 = twodash\n\n\n\n\n\n\nlinewidth\n\n\n  \n\n\n\n  \n    \n  \n\n\n\n\n\n  \n    \n  \n\n\n\n\n\n\n\n\nlinewidth = 1\nlinewidth = 2\nlinewidth = 3\nlinewidth = 4\nlinewidth = 5\nlinewidth = 6\n\n\n\n\n\n\nlineend\n\n\n  \n\n\n\n  \n    \n  \n\n\n\n\n\n  \n    \n  \n\n\n\n\n\n\n\n\nbutt (default)\nround\nsquare\n\n\n\n\n\n\nlinejoin\n\n\n  \n\n\n\n  \n    \n  \n\n\n\n\n\n  \n    \n  \n\n\n\n\n\n\n\n\nround (default)\nmitre\nbevel"
+  },
+  {
+    "objectID": "slides/slide1.html#aesthetic-or-attribute",
+    "href": "slides/slide1.html#aesthetic-or-attribute",
+    "title": "Drawing plots with ggplot2",
+    "section": "Aesthetic or Attribute?",
+    "text": "Aesthetic or Attribute?\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nWhen you supply values within aes, it assumes that it’s a data variable.\nThe string \"dodgerblue\" gets converted into a variable with one level and it gets colored by ggplot’s default color palette."
+  },
+  {
+    "objectID": "slides/slide1.html#when-your-input-is-an-attribute",
+    "href": "slides/slide1.html#when-your-input-is-an-attribute",
+    "title": "Drawing plots with ggplot2",
+    "section": "When your input is an attribute",
+    "text": "When your input is an attribute\nDon’t put attributes inside aes()!\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "slides/slide1.html#bonus-tip-as-is-operator",
+    "href": "slides/slide1.html#bonus-tip-as-is-operator",
+    "title": "Drawing plots with ggplot2",
+    "section": "Bonus tip: “as-is” operator",
+    "text": "Bonus tip: “as-is” operator\n\nUse I() operator to mean “as-is” in aesthetic mapping.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "slides/slide1.html#attributes-are-for-layers",
+    "href": "slides/slide1.html#attributes-are-for-layers",
+    "title": "Drawing plots with ggplot2",
+    "section": "Attributes are for layers",
+    "text": "Attributes are for layers\n\nAttributes should be defined in specific layers.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nNotice how the points don’t have the “dodgeblue” color.\nLayers inherit data and the mapping from ggplot() but not attributes."
   },
   {
     "objectID": "slides/slide1.html#summary",
     "href": "slides/slide1.html#summary",
-    "title": "The Grammar of Graphics",
+    "title": "Drawing plots with ggplot2",
     "section": "Summary",
     "text": "Summary"
   },
@@ -130,14 +221,14 @@
     "href": "index.html#learning-objectives",
     "title": "Data Visualisation with R Part 1",
     "section": "🎯 Learning objectives",
-    "text": "🎯 Learning objectives\nUpon completion of this workshop, participants should be able to:\n\nUnderstand the concept of the grammar of graphics\nCreate basic plots using ggplot2\nConstruct plots with multiple layers in ggplot2\nAdjust scales and guides within ggplot2"
+    "text": "🎯 Learning objectives\nUpon completion of this workshop, participants should be able to:\n\nCreate basic plots using ggplot2\nUnderstand the concept of the grammar of graphics\nConstruct plots with multiple layers in ggplot2\nAdjust scales and guides within ggplot2"
   },
   {
     "objectID": "index.html#preperation",
     "href": "index.html#preperation",
     "title": "Data Visualisation with R Part 1",
     "section": "🔧 Preperation",
-    "text": "🔧 Preperation\nPlease ensure that you download and install\n\nthe latest version of R,\nthe latest version of RStudio Desktop,\n(Optional) Slack (alternatively you can use the web version), and\nthe following packages by opening RStudio Desktop, then copy and paste the command below in the Console section, pushing Enter after pasting.\n\ninstall.packages(c(\"tidyverse\", \"rmarkdown\", \"agridat\", \"ggbeeswarm\", \"hexbin\"))\n If you are having issues, see also here or talk to the teaching team.\n\n\n\n\n\n\n Slack workspace (Optional)\n\n\n\nWe use Slack to facilitate communication between workshop participants and the teaching team.\n\nJoin ANU Learning Data Slack Community\n\n\nYou must use your ANU email to sign up.\nUse your full name.\nBy joining, you agree to abide by this code of conduct.\nPlease don’t direct message the teaching team in Slack. Your questions are more likely to be answered in the Slack channels rather than in direct messages.\n\nPlease note that the teaching team does not necessarily actively monitor or attend to the Slack workspace outside of the workshop."
+    "text": "🔧 Preperation\nPlease ensure that you download and install\n\nthe latest version of R,\nthe latest version of RStudio Desktop,\n(Optional) Slack (alternatively you can use the web version), and\nthe following packages by opening RStudio Desktop, then copy and paste the command below in the Console section, pushing Enter after pasting.\n\ninstall.packages(c(\"tidyverse\", \"palmerpenguins\", \"agridat\", \"hexbin\"))\n If you are having issues, see also here or talk to the teaching team.\n\n\n\n\n\n\n Slack workspace (Optional)\n\n\n\nWe use Slack to facilitate communication between workshop participants and the teaching team.\n\nJoin ANU Learning Data Slack Community\n\n\nYou must use your ANU email to sign up.\nUse your full name.\nBy joining, you agree to abide by this code of conduct.\nPlease don’t direct message the teaching team in Slack. Your questions are more likely to be answered in the Slack channels rather than in direct messages.\n\nPlease note that the teaching team does not necessarily actively monitor or attend to the Slack workspace outside of the workshop."
   },
   {
     "objectID": "index.html#teaching-team",
@@ -161,16 +252,177 @@
     "text": "This website is brought to you by the ANU Biological Data Science Institute."
   },
   {
+    "objectID": "slides/slide2.html#teaching-team",
+    "href": "slides/slide2.html#teaching-team",
+    "title": "The Grammar of Graphics",
+    "section": "Teaching team",
+    "text": "Teaching team\n\nDr. Emi TanakaJeremias IvanAudrey PrasetyaRyan O’DonnellNils Kreuter\n\n\n\n\n\n Academic statistician passionate about data science and open source software\n\n\n Currently, Deputy Director of ANU Biological Data Science Institute and Executive Editor of R Journal\n\n\n PhD in Statistical Bioinformatics\n\n\n BSci (Adv Maths) with major in Mathematics and Statistics\n\n\n Loves data and coding\n\n\n         https://emitanaka.org      @statsgen      fosstodon.org/@emitanaka\n\n\n\n\n\n\n 2nd year of PhD student at ANU, working on phylogenomics methods to study hybridisation\n\n\n BSci in Bioinformatics\n\n\n Enjoy hiking and science\n\n\n jeremiasivan\n\n\n\n\n\n\n\n\n (Almost finishing) PhD student @Moritz Lab, E&E Division, RSB, ANU\n\n\n Working on historical biogeography of Indo-Australian birds\n\n\n BSc (Hons) with major in Zoology and Ecology & Conservation\n\n\n Loves games, art markets, and FOOD\n\n\n @goaudreymp\n\n\n https://linktr.ee/goaudreymp\n\n\n\n\n\n\n\n\n 3rd Year PhD student @ Linde Lab, E&E Division, RSB, ANU\n\n\n Investigating the evolution of the Australian orchid flora and associated funga\n\n\n MScSt (Biodiversity Science)\n\n\n Loves playing music, reading, nature\n\n\n @rpodonnell\n\n\n rpodonnell.github.io\n\n\n\n\n\n\n\n\n 2nd Year PhD student @ Sequeira Lab, E&E Division, RSB, ANU\n\n\n Identifying social, collective, or coordinated movement behaviour patterns in sharks using tracking data\n\n\n MSc (Marine Biology), BSc (Biology)\n\n\n Loves triathlon, hiking and the ocean\n\n\n @nilskreuter\n\n\n https://linktr.ee/nilskreuter"
+  },
+  {
+    "objectID": "slides/slide2.html#schedule",
+    "href": "slides/slide2.html#schedule",
+    "title": "The Grammar of Graphics",
+    "section": "🕙 Schedule",
+    "text": "🕙 Schedule\n\n\n\n\n\n\n\n\n\nTime\nContent\n\n\n\n\n10:00–10:30\nDrawing plots with ggplot2\n\n\n10:30–11:00\nExercise 1\n\n\n11:00–11:30\nThe Grammar of Graphics\n\n\n11:30–12:00\nExercise 2\n\n\n12:00–12:10\nBreak\n\n\n12:10–12:30\nDrawing multiple layers with ggplot2\n\n\n12:30–12:50\nExercise 3\n\n\n12:50–13:00\nWrap up"
+  },
+  {
+    "objectID": "slides/slide2.html#todays-learning-objectives",
+    "href": "slides/slide2.html#todays-learning-objectives",
+    "title": "The Grammar of Graphics",
+    "section": "Today’s learning objectives",
+    "text": "Today’s learning objectives\n\n\nCreate basic plots using ggplot2\n\n\nUnderstand the concept of the grammar of graphics\n\n\nConstruct plots with multiple layers in ggplot2\n\n\nAdjust scales and guides within ggplot2"
+  },
+  {
     "objectID": "slides/slide2.html#current-learning-objective",
     "href": "slides/slide2.html#current-learning-objective",
-    "title": "Drawing plots with ggplot2",
+    "title": "The Grammar of Graphics",
     "section": " Current learning objective",
-    "text": "Current learning objective\n\n\n-Understand the concept of the grammar of graphics\n\n\nCreate basic plots using ggplot2\n\n\n-Construct plots with multiple layers in ggplot2\n\n\n-Adjust scales and guides within ggplot2"
+    "text": "Current learning objective\n\n\n-Create basic plots using ggplot2\n\n\nUnderstand the concept of the grammar of graphics\n\n\n-Construct plots with multiple layers in ggplot2\n\n\n-Adjust scales and guides within ggplot2"
+  },
+  {
+    "objectID": "slides/slide2.html#catalogue-of-plot-types",
+    "href": "slides/slide2.html#catalogue-of-plot-types",
+    "title": "The Grammar of Graphics",
+    "section": "Catalogue of plot types",
+    "text": "Catalogue of plot types"
+  },
+  {
+    "objectID": "slides/slide2.html#plotting",
+    "href": "slides/slide2.html#plotting",
+    "title": "The Grammar of Graphics",
+    "section": "Plotting",
+    "text": "Plotting"
+  },
+  {
+    "objectID": "slides/slide2.html#plotting-more-than-one-plot",
+    "href": "slides/slide2.html#plotting-more-than-one-plot",
+    "title": "The Grammar of Graphics",
+    "section": "Plotting more than one plot",
+    "text": "Plotting more than one plot"
+  },
+  {
+    "objectID": "slides/slide2.html#plotting-layer",
+    "href": "slides/slide2.html#plotting-layer",
+    "title": "The Grammar of Graphics",
+    "section": "Plotting layer",
+    "text": "Plotting layer"
+  },
+  {
+    "objectID": "slides/slide2.html#plotting-small-multiples",
+    "href": "slides/slide2.html#plotting-small-multiples",
+    "title": "The Grammar of Graphics",
+    "section": "Plotting small multiples",
+    "text": "Plotting small multiples"
+  },
+  {
+    "objectID": "slides/slide2.html#plotting-from-a-list-of-programs",
+    "href": "slides/slide2.html#plotting-from-a-list-of-programs",
+    "title": "The Grammar of Graphics",
+    "section": "Plotting from a list of programs",
+    "text": "Plotting from a list of programs\n\n\n\n\n\n\n\n\n\n\nOne function  One complete plot type\nThe number of plots that can be drawn\n\n\n\nThe number of plot functions"
+  },
+  {
+    "objectID": "slides/slide2.html#the-grammar-of-graphics",
+    "href": "slides/slide2.html#the-grammar-of-graphics",
+    "title": "The Grammar of Graphics",
+    "section": "The Grammar of Graphics",
+    "text": "The Grammar of Graphics\n\n\nIn linguistics, we combine finite number of words to construct vast number of sentences under a shared understanding of the grammar.\nWilkinson (2005) introduced “the grammar of graphics” as a paradigm to describe plots by combining a finite number of components.\nWickham (2010) interpreted the grammar of graphics into the ggplot2 R package (as part of his PhD project)\nggplot2 is widely used in the scientific literature and even in newspapers!\nThe grammar of graphics paradigm is also interpreted in other programming languages such as Python (e.g., plotnine), Julia (e.g., VegaLite.jl), and JavaScript (e.g., Vega).\n\n\n\n\nL. Wilkinson, The Grammar of Graphics, 2nd ed., vol. 49. in Statistics and computing, no. 1, vol. 49. New York: Springer, 2005. doi: 10.1198/tech.2007.s456.\nH. Wickham, “A Layered Grammar of Graphics,” Journal of Computational and Graphical Statistics, vol. 19, no. 1, pp. 3–28, Jan. 2010, doi: 10.1198/jcgs.2009.07098."
+  },
+  {
+    "objectID": "slides/slide2.html#deconstructing-histogram",
+    "href": "slides/slide2.html#deconstructing-histogram",
+    "title": "The Grammar of Graphics",
+    "section": "Deconstructing histogram",
+    "text": "Deconstructing histogram"
+  },
+  {
+    "objectID": "slides/slide2.html#deconstructing-histogram-1",
+    "href": "slides/slide2.html#deconstructing-histogram-1",
+    "title": "The Grammar of Graphics",
+    "section": "Deconstructing histogram",
+    "text": "Deconstructing histogram"
+  },
+  {
+    "objectID": "slides/slide2.html#deconstructing-barplot",
+    "href": "slides/slide2.html#deconstructing-barplot",
+    "title": "The Grammar of Graphics",
+    "section": "Deconstructing barplot",
+    "text": "Deconstructing barplot"
+  },
+  {
+    "objectID": "slides/slide2.html#deconstructing-barplot-1",
+    "href": "slides/slide2.html#deconstructing-barplot-1",
+    "title": "The Grammar of Graphics",
+    "section": "Deconstructing barplot",
+    "text": "Deconstructing barplot"
+  },
+  {
+    "objectID": "slides/slide2.html#visualising-amounts-and-proportions",
+    "href": "slides/slide2.html#visualising-amounts-and-proportions",
+    "title": "The Grammar of Graphics",
+    "section": "Visualising amounts and proportions",
+    "text": "Visualising amounts and proportions\n\n\n\n\n  \n\n\n\n  \n    \n  \n\n\n\n\n\n  \n    \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBARPLOT\n\n \n\n  \n\n\n\n  \n    \n  \n\n\n\n\n\n  \n    \n  \n\n\n\n\n\n\n\n\n\n\n\n\nSCATTER PLOT\n\n \n\n  \n\n\n\n  \n    \n  \n\n\n\n\n\n  \n    \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGROUPED\nBARPLOT\n\n \n\n  \n\n\n\n  \n    \n  \n\n\n\n\n\n  \n    \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSTACKED\nBARPLOT\n\n \n\n  \n\n\n\n  \n    \n  \n\n\n\n\n\n  \n    \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHEATMAP\n\n\n\n\n  \n\n\n\n  \n    \n  \n\n\n\n\n  \n    \n  \n\n\n\n\n\n\n\n  \n    \n  \n\n\n\n\n\n\n\n\nPIE CHART\n\n \n\n  \n\n\n\n  \n    \n  \n\n\n\n\n\n  \n    \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSTACKED\nPERCENTAGE\nBARPLOT\n\n \n\n  \n\n\n\n  \n    \n  \n\n\n\n\n\n  \n    \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSTACKED\nDENSITY\nPLOT\n\n\n\n\n\ngeom_bar()\ngeom_col()\ngeom_point()\ngeom_tile()\ngeom_density()"
+  },
+  {
+    "objectID": "slides/slide2.html#a-barplot-with-geom_bar-with-a-categorical-variable",
+    "href": "slides/slide2.html#a-barplot-with-geom_bar-with-a-categorical-variable",
+    "title": "The Grammar of Graphics",
+    "section": "A barplot with geom_bar() with a categorical variable",
+    "text": "A barplot with geom_bar() with a categorical variable\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nIf you have a categorical variable, then you usually want to study the frequency of its categories.\nHere the stat = \"count\" is computing the frequencies for each category for you."
+  },
+  {
+    "objectID": "slides/slide2.html#a-barplot-with-geom_bar-with-a-discrete-numerical-variable",
+    "href": "slides/slide2.html#a-barplot-with-geom_bar-with-a-discrete-numerical-variable",
+    "title": "The Grammar of Graphics",
+    "section": "A barplot with geom_bar() with a discrete numerical variable",
+    "text": "A barplot with geom_bar() with a discrete numerical variable\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nSupplying a numerical variable to the x-axis results in a continuous scale.\nIf you want to study each level in a discrete variable, then you may want to convert the discrete variable to a factor instead x = factor(year)."
+  },
+  {
+    "objectID": "slides/slide2.html#summary-data",
+    "href": "slides/slide2.html#summary-data",
+    "title": "The Grammar of Graphics",
+    "section": "Summary data",
+    "text": "Summary data\n\nSometimes your input data may already contain pre-computed counts.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "slides/slide2.html#a-barplot-with-geom_col",
+    "href": "slides/slide2.html#a-barplot-with-geom_col",
+    "title": "The Grammar of Graphics",
+    "section": "A barplot with geom_col()",
+    "text": "A barplot with geom_col()\n\n\nIn this case, you don’t need stat = \"count\" to do the counting for you and use geom_col() instead.\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nThis is essential a short hand for geom_bar(stat = \"identity\") where stat = \"identity\" means that you will take the value as supplied without any statistical transformation."
+  },
+  {
+    "objectID": "slides/slide2.html#a-stacked-barplot-with-stack",
+    "href": "slides/slide2.html#a-stacked-barplot-with-stack",
+    "title": "The Grammar of Graphics",
+    "section": "A stacked barplot with \"stack\"",
+    "text": "A stacked barplot with \"stack\"\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "slides/slide2.html#a-grouped-barplot-with-dodge",
+    "href": "slides/slide2.html#a-grouped-barplot-with-dodge",
+    "title": "The Grammar of Graphics",
+    "section": "A grouped barplot with \"dodge\"",
+    "text": "A grouped barplot with \"dodge\"\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\"dodge\" = position_dodge()\n\n\n\n\n\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "slides/slide2.html#another-grouped-barplot-with-dodge2",
+    "href": "slides/slide2.html#another-grouped-barplot-with-dodge2",
+    "title": "The Grammar of Graphics",
+    "section": "Another grouped barplot with \"dodge2\"",
+    "text": "Another grouped barplot with \"dodge2\"\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\"dodge2\" uses a different algorithm to recalculate the x-values with an option to add a padding between geometric objects"
+  },
+  {
+    "objectID": "slides/slide2.html#stacked-percentage-barplot-with-fill",
+    "href": "slides/slide2.html#stacked-percentage-barplot-with-fill",
+    "title": "The Grammar of Graphics",
+    "section": "Stacked percentage barplot with \"fill\"",
+    "text": "Stacked percentage barplot with \"fill\"\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nIf you want to compare the percentages between the different x, then position = \"fill\" can be handy."
   },
   {
     "objectID": "slides/slide2.html#summary",
     "href": "slides/slide2.html#summary",
-    "title": "Drawing plots with ggplot2",
+    "title": "The Grammar of Graphics",
     "section": "Summary",
     "text": "Summary"
   },

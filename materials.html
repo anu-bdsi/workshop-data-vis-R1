@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.551">
+<meta name="generator" content="quarto-1.4.545">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -213,7 +213,7 @@ ul.task-list li input[type="checkbox"] {
 // Document level settings ----
 
 // Determine if we need to install R packages
-globalThis.qwebrInstallRPackagesList = [''];
+globalThis.qwebrInstallRPackagesList = ['palmerpenguins', 'tidyverse', 'agridat'];
 
 // Specify possible locations to search for the repository
 globalThis.qwebrPackageRepoURLS = ['https://repo.r-wasm.org/'];
@@ -235,7 +235,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"code":"\n\n","options":{"context":"interactive","out-width":"700px","label":"unnamed-chunk-1","autorun":"false","message":"true","results":"markup","read-only":"false","classes":"","out-height":"","warning":"true","fig-width":7,"dpi":72,"fig-cap":"","comment":"","fig-height":5,"output":"true"},"id":1}];
+globalThis.qwebrCellDetails = [{"id":1,"options":{"label":"unnamed-chunk-1","context":"interactive","comment":"","output":"true","classes":"","message":"true","out-width":"700px","fig-width":7,"dpi":72,"autorun":"false","warning":"true","results":"markup","read-only":"false","out-height":"","fig-height":5,"fig-cap":""},"code":"\n\n"}];
 
 </script>
 <script type="module">
@@ -1231,7 +1231,7 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">10:00–10:30</td>
-<td style="text-align: left;"><a href="slides/slide1.html" target="_blank">The Grammar of Graphics</a></td>
+<td style="text-align: left;"><a href="slides/slide1.html" target="_blank">Drawing plots with <span style="font-family:monospace;">ggplot2</span></a></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">10:30–11:00</td>
@@ -1239,7 +1239,7 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 </tr>
 <tr class="odd">
 <td style="text-align: left;">11:00–11:30</td>
-<td style="text-align: left;"><a href="slides/slide2.html" target="_blank">Drawing plots with <span style="font-family:monospace;">ggplot2</span></a></td>
+<td style="text-align: left;"><a href="slides/slide2.html" target="_blank">The Grammar of Graphics</a></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">11:30–12:00</td>
@@ -1275,7 +1275,7 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 <section id="exercises" class="level2">
 <h2 class="anchored" data-anchor-id="exercises">🏋️‍♀️ Exercises</h2>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Exercise 1</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Exercise 2</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Exercise 3</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false">Exercise 4</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Exercise 1</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Exercise 2</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Exercise 3</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <div id="qwebr-insertion-location-1"></div>
@@ -1293,7 +1293,7 @@ Reflect on learning objectives
 You should be able to:
 <ul class="checkbox">
 <li>
-<input type="checkbox"> Understand the concept of the grammar of graphics
+<input type="checkbox"> Create basic plots using <code>ggplot2</code>
 </li>
 </ul>
 </div>
@@ -1313,7 +1313,7 @@ Reflect on learning objectives
 You should be able to:
 <ul class="checkbox">
 <li>
-<input type="checkbox"> Create basic plots using <code>ggplot2</code>
+<input type="checkbox"> Understand the concept of the grammar of graphics
 </li>
 </ul>
 </div>
@@ -1334,26 +1334,6 @@ You should be able to:
 <ul class="checkbox">
 <li>
 <input type="checkbox"> Construct plots with multiple layers in <code>ggplot2</code>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Reflect on learning objectives
-</div>
-</div>
-<div class="callout-body-container callout-body">
-You should be able to:
-<ul class="checkbox">
-<li>
-<input type="checkbox"> <strike>Adjust scales and guides within <code>ggplot2</code></strike>
 </li>
 </ul>
 </div>
@@ -1651,24 +1631,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/anu-bdsi\.github\.io\/workshop-data-vis-R1\/");
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
-      }
-    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -1703,11 +1665,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
+      return note.innerHTML;
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
