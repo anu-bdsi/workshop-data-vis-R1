@@ -14,6 +14,15 @@ author: Emi Tanaka
 institute: Biological Data Science Institute
 date: 2024/04/10
 date-format: "D[th] MMMM YYYY"
+filters:
+  - webr
+execute: 
+  echo: true
+webr: 
+  show-startup-message: false  
+  packages: 
+    - tidyverse
+    - agridat
 ---
 
 
@@ -30,6 +39,112 @@ source("setup.R")
 #| echo: false
 learning_objectives(3)
 ```
+
+## Layering plots
+
+
+
+::: flex
+
+::: {.w-70}
+
+```{webr-r}
+library(palmerpenguins)
+library(tidyverse)
+ggplot(penguins, aes(x = island, y = body_mass_g)) +
+  geom_violin() +
+  geom_boxplot(width = 0.1)
+```
+
+
+:::
+
+::: {.w-30 .pl3}
+
+- You can add more than one layer.
+- The order of layer matters.
+
+:::
+
+:::
+
+
+
+
+
+
+## Inheriting data and mapping
+
+* A layer inherits the data and mapping from the initialised ggplot object by default 
+
+<center>
+<img src= "images/ggplot-multiple-layers.png" width="70%">
+</center>
+
+
+## Layer-specific data and aesthetic mapping
+
+![](images/ggplot-multiple-layers-data-mapping.png)
+
+* For each layer, aesthetic and/or data can be overwritten
+
+## Illustrative data 🚜 Iowa farmland values by county
+
+```{webr-r}
+data(wallace.iowaland, package = "agridat")
+glimpse(wallace.iowaland)
+map_data("county", region = "iowa")
+```
+
+
+## Layer specific aesthetic
+
+```{webr-r}
+ggplot(wallace.iowaland, aes(x = long, y = lat)) +
+  geom_point(size = 4, shape = "square", color = "black") +
+  geom_point(aes(color = yield), size = 2) 
+```
+
+## Layer specific data
+
+```{webr-r}
+ggplot(wallace.iowaland, aes(x = long, y = lat)) +
+  geom_polygon(data = map_data("county", region = "iowa"),
+               aes(group = group), fill = "white", color = "black") +
+  geom_point(size = 4, shape = "square", color = "black") +
+  geom_point(aes(color = yield), size = 2) 
+```
+
+## Layer specific data as a function of inherited data {auto-animate=true}
+
+```{webr-r}
+ggplot(wallace.iowaland, aes(x = long, y = lat)) +
+  geom_polygon(data = map_data("county", region = "iowa"),
+               aes(group = group), fill = "white", color = "black") +
+  geom_point(size = 4, shape = "square", color = "black") +
+  geom_point(aes(color = yield), size = 2) +
+  geom_label(data = function(.data) subset(.data, yield  > quantile(yield, 0.95)),
+            aes(label = county), nudge_y = -0.1, size = 3)
+```
+
+
+
+
+## Annotation layer
+
+
+* `annotate()` allows you to add elements to plots without a `data.frame`
+
+```{webr-r}
+ggplot(wallace.iowaland, aes(x = long, y = lat)) +
+  geom_polygon(data = map_data("county", region = "iowa"),
+               aes(group = group), fill = "white", color = "black") +
+  geom_point(aes(color = yield), size = 2) +
+  annotate("segment", x = -95, y = 40.3, xend = -94.5, yend = 40.6, color = "red") +
+  annotate("label", x = -95, y = 40.3, label = "Iowa", color = "red") 
+```
+
+
 
 ## Summary
 
