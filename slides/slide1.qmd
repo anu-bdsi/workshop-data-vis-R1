@@ -47,6 +47,36 @@ learning_objectives(1)
 
 ![](images/r-graphics-system.png)
 
+
+## `ggplot2` R package 
+
+- `ggplot2` R package is part of the `tidyverse` suite of R packages
+- `ggplot2` is widely used by the scientific community and even by news outlets (e.g. [Financial Times and BBC](https://blog.revolutionanalytics.com/2018/06/ft-bbc-uses-r.html))
+
+::: flex
+
+
+
+::: {.w-50}
+
+![](images/ft.png){.ba width="70%"}
+
+[<i class='fas fa-link'></i>](https://www.ft.com/content/e4a5012e-6e3e-11e8-92d3-6c13e5c92914)
+
+:::
+
+::: {.w-50}
+
+![](images/bbc1.png){.ba width="70%"}
+
+[<i class='fas fa-link'></i>](https://www.bbc.com/news/health-43726436)
+
+:::
+
+:::
+
+
+
 ## Basic structure of `ggplot`
 
 ![](images/ggplot-basic-str.png)
