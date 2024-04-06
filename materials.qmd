@@ -8,6 +8,7 @@ format:
     css: 
       - assets/webex.css
       - assets/custom.css
+      - assets/exercises.css
     include-after-body: 
       - assets/webex.js
 filters:
@@ -24,6 +25,7 @@ webr:
 library(webexercises)
 library(lubridate)
 library(tidyverse)
+library(agridat)
 ex_tabset <- function(id) {
   paste0("[_Exercise ", id, "_](#tabset-1-", id, "-tab){onclick=",
          'document.getElementById(', "'tabset-1-", id, "-tab').click();",

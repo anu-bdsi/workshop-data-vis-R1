@@ -11,12 +11,188 @@ format:
 ```{r}
 #| include: false
 library(webexercises)
+
+```
+
+* For each exercise, you will be shown the structure of the dataset and then make a targetted plot shown. 
+
+* You can find more details about the dataset by looking at the documentation in your R console, e.g. enter `?agridat::crampton.pig` for information of the diamonds dataset.
+
+### Weight gain in pigs for different treatments
+
+```{r pig-data}
+str(crampton.pig)
+```
+
+::: {.panel-tabset}
+
+## Exercise 1A
+
+
+
+```{r ex01s, echo = FALSE, class = "target"}
+#| fig-width: 3
+#| fig-height: 3
+#| fig-align: center
+ggplot(crampton.pig, aes(feed)) + 
+  geom_density() 
 ```
 
 
 ```{webr-r}
-
-
-
-
+ggplot(crampton.pig, aes(___)) + 
+  geom_density() 
 ```
+
+## Exercise 1B
+
+```{r ex03s, echo = FALSE, class = "target"}
+#| fig-width: 3
+#| fig-height: 1.5
+#| fig-align: center
+ggplot(crampton.pig, aes(feed)) + 
+  geom_boxplot() 
+```
+
+```{webr-r}
+ggplot(crampton.pig, aes(___)) + 
+  geom____() 
+```
+
+## Exercise 1C
+
+```{r ex04s, echo = FALSE, class = "target"}
+#| fig-width: 5
+#| fig-height: 4
+#| fig-align: center
+ggplot(crampton.pig, aes(weight1, weight2, color = treatment, size = feed)) + 
+  geom_point()
+```
+
+```{webr-r}
+ggplot(crampton.pig, aes(___, ___, color = ___, size = ___)) + 
+  geom____()
+```
+
+## Exercise 1D
+
+```{r ex05s, echo = FALSE, class = "target"}
+#| fig-height: 3
+ggplot(crampton.pig, aes(rep, treatment, fill = weight2 - weight1)) + 
+  geom_tile(color = "black", linewidth = 2)
+```
+
+```{webr-r}
+ggplot(crampton.pig, aes(___, ___, fill = ___)) + 
+  geom_tile(color = "black", linewidth = 2)
+```
+
+## Exercise 1E
+
+```{r echo = FALSE, class = "target"}
+pigdata <- crampton.pig |> 
+  rename(initial = weight1, 
+         final = weight2) |> 
+  mutate(pig = 1:n()) |> 
+  pivot_longer(cols = c(initial, final),
+               names_to = "period", 
+               values_to = "weight") |>
+  mutate(period = factor(period, levels = c("initial", "final")))
+
+ggplot(pigdata, aes(period, weight, group = pig, color = treatment)) + 
+  geom_line()
+```
+
+```{webr-r}
+pigdata <- crampton.pig |> 
+  # make id for each pig
+  mutate(pig = 1:n()) |> 
+  rename(initial = weight1,
+           final = weight2) |> 
+  # reshape data
+  ___ |> 
+  # change the order of the levels
+  mutate(period = factor(period, levels = c("initial", "final"))
+
+ggplot(pigdata, aes(period, weight, group = pig, color = treatment)) +
+  geom_line()
+```
+
+
+:::
+
+
+### Diamonds 
+
+```{r}
+str(diamonds)
+```
+
+::: {.panel-tabset}
+
+## Exercise 1F
+
+
+```{r ex07s, echo = FALSE, class = "target", message = FALSE}
+ggplot(diamonds, aes(price)) + 
+  geom_histogram() 
+```
+
+
+```{webr-r}
+ggplot(diamonds, aes(___)) + 
+  geom____() 
+```
+
+## Exercise 1G
+
+
+Try changing the bin width to see how the histogram changes. 
+
+```{r ex08s, echo = FALSE, class = "target", message = FALSE}
+ggplot(diamonds, aes(price)) + 
+  geom_histogram(binwidth = 1) 
+```
+
+```{webr-r}
+ggplot(diamonds, aes(___)) + 
+  geom____(___ = 1) 
+```
+
+## Exercise 1H
+
+```{r ex10s, echo = FALSE, class = "target", message = FALSE}
+ggplot(diamonds, aes(clarity, price, fill = cut)) + 
+  geom_boxplot()
+```
+
+```{webr-r}
+ggplot(diamonds, aes(___, ___, fill = ___)) + 
+  geom____()
+```
+
+## Exercise 1I
+
+```{r ex11s, echo = FALSE, class = "target", message = FALSE}
+ggplot(diamonds, aes(carat, price)) + 
+  geom_density_2d_filled()
+```
+
+```{webr-r}
+ggplot(heart2, aes(___, ___)) + 
+  geom_density_2d_filled()
+```
+
+## Exercise 1J
+
+```{r ex12s, echo = FALSE, class = "target", message = FALSE}
+ggplot(diamonds, aes(carat, price)) + 
+  geom_hex()
+```
+
+```{webr-r}
+ggplot(diamonds, aes(___, ___)) + 
+  geom____()
+```
+
+:::
