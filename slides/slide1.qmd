@@ -444,6 +444,33 @@ ggplot(penguins, aes(x = bill_depth_mm, y = bill_length_mm),
 
 ## Summary
 
+
+## `ggplot2` cheatsheet
+
+::: flex
+
+::: {.w-50}
+
+![](assets/data-visualization-2.1-page1.png){.ba}
+
+:::
+
+::: {.w-50 .pl3}
+
+![](assets/data-visualization-2.1-page2.png){.ba}
+
+
+:::
+
+:::
+
+::: aside
+
+[<i class='fas fa-file-pdf'></i> ggplot2 cheatsheet](assets/data-visualization-2.1.pdf)
+
+:::
+
+
 # Exercise time {background-color="#F5EDDE"}
 
 
