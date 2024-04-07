@@ -13,3 +13,97 @@ format:
 library(webexercises)
 ```
 
+* For each exercise, wrangle the data in the format required then draw the targetted plot required. 
+
+### U.S. historical crop yields by state
+
+```{webr-r}
+#| autorun: true
+data(nass.wheat, package = "agridat")
+data(nass.corn, package = "agridat")
+data(nass.soybean, package = "agridat")
+
+str(nass.wheat)
+str(nass.corn)
+str(nass.soybean)
+```
+
+::: {.panel-tabset}
+
+## Exercise 3A
+
+
+
+```{r echo = FALSE, class = "target"}
+crops_data <- bind_rows(mutate(nass.wheat, crop = "Wheat"),
+                        mutate(nass.corn, crop = "Corn"),
+                        mutate(nass.soybean, crop = "Soy")) 
+
+ggplot(crops_data, aes(crop, yield)) + 
+  geom_violin() + 
+  geom_boxplot(width = 0.1)
+```
+
+```{webr-r}
+crops_data <- ___
+
+ggplot(crops_data, aes(___, ___)) + 
+  geom____() + 
+  geom____(width = 0.1)
+```
+
+
+## Exercise 3B
+
+```{r echo = FALSE, class = "target"}
+wheat2011_data <- nass.wheat |> 
+  filter(year == 2011) 
+
+highlight <- function(.data) filter(.data, acres > 4000000 | yield > 80)
+
+ggplot(wheat2011_data, aes(acres, yield)) + 
+  geom_point() + 
+  geom_point(data = highlight, color = "red") + 
+  geom_text(data = highlight, aes(label = state), nudge_y = 5) 
+```
+
+```{webr-r}
+wheat2011_data <- nass.wheat |> 
+  ___(year == 2011) 
+
+highlight <- function(.data) filter(.data, acres > 4000000 | yield > 80)
+
+ggplot(wheat2011_data, aes(___, yield)) + 
+  ___() + 
+  ___(data = ___, color = "red") + 
+
+```
+
+## Exercise 3C
+
+```{r echo = FALSE, class = "target"}
+wheat2011_data_with_map <- nass.wheat %>% 
+  filter(year == 2011) %>% 
+  mutate(region = tolower(state)) %>% 
+  right_join(map_data("state"), by = "region")
+
+ggplot(wheat2011_data_with_map, aes(long, lat)) + 
+  geom_polygon(aes(group = group, fill = yield), color = "black") +
+  annotate("label", x = -120, y = 27, label = "2011", size = 8)
+```
+
+```{webr-r}
+wheat2011_data_with_map <- nass.wheat |> 
+  filter(year == 2011) |> 
+  mutate(region = tolower(state)) |>  
+  right_join(map_data("state"), by = "region")
+
+ggplot(wheat2011_data_with_map, aes(___, ___)) + 
+  geom_polygon(aes(___), color = "black") +
+  ___("label", x = -120, y = 27, label = "2011", size = 8)
+```
+
+
+
+
+:::
