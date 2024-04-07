@@ -20,7 +20,9 @@ library(webexercises)
 
 ### Weight gain in pigs for different treatments
 
-```{r pig-data}
+```{webr-r}
+#| autorun: true
+data(crampton.pig, package = "agridat")
 str(crampton.pig)
 ```
 
@@ -124,9 +126,10 @@ ggplot(pigdata, aes(___, ___, group = pig, color = ___)) +
 :::
 
 
-### Diamonds 
+### Prices of over 50,000 round cut diamonds
 
-```{r}
+```{webr-r}
+#| autorun: true
 str(diamonds)
 ```
 
