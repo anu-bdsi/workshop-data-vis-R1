@@ -249,6 +249,42 @@ H. Wickham, “A Layered Grammar of Graphics,” Journal of Computational and Gr
 
 ![](images/deconstruct-barplot2.png){data-id="plotting" width="100%"}
 
+## Layer data
+
+```{webr-r}
+ghist <- ggplot(penguins, aes(bill_depth_mm)) +
+  geom_histogram() 
+
+layer_data(ghist, 1)
+```
+
+## Accessing layer data
+
+::: flex
+
+::: {.w-50}
+
+```{webr-r}
+ggplot(penguins, aes(bill_depth_mm)) +
+  geom_histogram(aes(y = after_stat(density))) 
+```
+
+:::
+
+::: {.w-40 .pl3}
+
+* Equivalent to the old syntaxes `y = stat(density)` and `y = ..density..` 
+
+:::
+
+:::
+
+
+
+
+
+
+
 ## [Visualising]{.anu-black} amounts [and]{.anu-black} proportions {background-color="#e3e3e3"}
 
 ::: flex
@@ -276,49 +312,38 @@ H. Wickham, “A Layered Grammar of Graphics,” Journal of Computational and Gr
 :::
 
 
-
-
 # <i class="fas fa-arrows-alt"></i> Position adjustments {background-color="#F5EDDE"}
 
+## A barplot with `geom_bar()` 
 
-## A barplot with `geom_bar()` [with a categorical variable]{.f3}
+::: flex
+
+::: {.w-60}
 
 ```{webr-r}
 library(palmerpenguins)
 ggplot(penguins, aes(island)) +
   geom_bar()
+
+ggplot(penguins, aes(island)) +
+  stat_count(geom = "point", size = 3)
 ```
+
+:::
+
+::: {.w-40 .pl3}
 
 * If you have a categorical variable, then you usually want to study the frequency of its categories. 
 * Here the `stat = "count"` is computing the frequencies for each category for you.  
+* You can alternatively use `stat_count()` and change the `geom`. 
 
-
-## A barplot with `geom_bar()` [with a discrete numerical variable]{.f3}
-
-::: flex
-
-::: w-60
-
-```{webr-r}
-penguins %>%
-  # for demonstration, change 2009 to 2010
-  mutate(year = case_match(year,
-                           2009 ~ 2010,
-                           .default = year)) %>%
-  ggplot(aes(x = year)) +
-  geom_bar()
-```
-
-:::
-
-::: w-40
-
-* Supplying a numerical variable to the x-axis results in a continuous scale.
-* If you want to study each level in a discrete variable, then you may want to convert the discrete variable to a factor instead `x = factor(year)`. 
 
 :::
 
 :::
+
+
+
 
 
 
@@ -329,6 +354,7 @@ penguins %>%
 ```{webr-r}
 penguins_summary <- penguins %>% 
   count(sex, species)
+
 penguins_summary
 ```
 
@@ -336,11 +362,9 @@ penguins_summary
 
 
 
-. . . 
+::: flex
 
-* In this case, you don't need `stat = "count"` to do the counting for you and use `geom_col()` instead.
-
-. . . 
+::: {.w-60}
 
 ```{webr-r}
 ggplot(penguins_summary, 
@@ -348,60 +372,33 @@ ggplot(penguins_summary,
   geom_col() 
 ```
 
+:::
 
+::: {.w-40 .pl3}
+
+* In this case, you don't need `stat = "count"` to do the counting for you and use `geom_col()` instead.
 * This is essential a short hand for `geom_bar(stat = "identity")` where `stat = "identity"` means that you will take the value as supplied without any statistical transformation.
+
+:::
+
+:::
+
+
+
+
+
+
 
 ## A stacked barplot with `"stack"`
 
-::: flex
 
-::: {.w-65 .pr3}
 
 ```{webr-r}
 penguins_summary
+
+ggplot(penguins_summary, aes(x = species, y = n, fill = sex)) +
+  geom_col(position = "stack") # default position
 ```
-
-
-:::
-
-
-::: w-35
-
-```{webr-r}
-ggplot(penguins_summary, 
-       aes(x = species, y = n)) +
-  geom_col() 
-```
-
-:::
-
-:::
-
-. . . 
-
-
-::: flex
-
-::: w-65
-
-
-```{webr-r}
-ggplot(penguins_summary, 
-       aes(x = species, y = n, fill = sex)) +
-  geom_col(# default position
-           position = "stack") 
-```
-
-:::
-
-
-::: w-35
-
-
-
-:::
-
-:::
 
 
 
@@ -410,9 +407,6 @@ ggplot(penguins_summary,
 
 ## A grouped barplot with `"dodge"`
 
-::: flex
-
-::: w-65
 
 ```{webr-r}
 ggplot(penguins_summary,
@@ -420,51 +414,26 @@ ggplot(penguins_summary,
   geom_col(position = "dodge")
 ```
 
-::: fragment
+. . . 
 
 * `"dodge"` = `position_dodge()`
-
-:::
-
-:::
-
-::: w-35
-
-
-:::
-
-
-:::
-
 
 
 . . . 
 
-::: flex
-
-::: w-65
 
 ```{webr-r}
 ggplot(penguins_summary, 
        aes(species, n, fill = sex)) +
-  geom_col(
-    position = position_dodge(preserve = "single")) +
-  scale_fill_discrete(drop = FALSE)
+  geom_col(position = position_dodge(preserve = "single"))
 ```
-
-:::
-
-::: w-35
-
-
-
-:::
-
-
-:::
 
 
 ## Another grouped barplot with `"dodge2"`
+
+::: flex
+
+::: {.w-70}
 
 ```{webr-r}
 ggplot(penguins_summary, 
@@ -472,9 +441,26 @@ ggplot(penguins_summary,
   geom_col(position = position_dodge2(padding = 0.1))
 ```
 
+:::
+
+::: {.w-30 .pl3}
+
 * `"dodge2"` uses a different algorithm to recalculate the x-values with an option to add a padding between geometric objects
 
+
+:::
+
+:::
+
+
+
+
+
 ## Stacked percentage barplot with `"fill"`
+
+::: flex
+
+::: {.w-70}
 
 ```{webr-r}
 ggplot(penguins_summary, 
@@ -482,8 +468,47 @@ ggplot(penguins_summary,
   geom_col(position = "fill")
 ```
 
+:::
+
+::: {.w-30 .pl3}
 
 * If you want to compare the percentages between the different `x`, then `position = "fill"` can be handy.
+
+:::
+
+:::
+
+
+# <i class="fas fa-compass"></i> Coordinate systems {background-color="#F5EDDE"}
+
+
+## Pie or donut charts with `coord_polar()` {auto-animate=true}
+
+* The default coordinate system is the Cartesian coordinate system.
+
+. . . 
+
+* But you can change this to a polar coordinate system like below.
+
+```{webr-r}
+ggplot(penguins_summary, 
+       aes(species, n, fill = sex)) +
+  geom_col(position = "fill") +
+  coord_polar("y")
+```
+
+## Other coordinate systems
+
+::: incremental
+
+* `coord_cartesian()` for Cartesian coordinate systems (default)
+* `coord_flip()` to flip the x and y 
+* `coord_fixed()` to use a fixed aspect ratio
+* `coord_equal()` is essentially `coord_fixed(ratio = 1)`
+* `coord_trans()` to transform the coordinate after the statistical transformation
+* `coord_map()` to use projection based on `mapproj` 
+
+:::
 
 
 
