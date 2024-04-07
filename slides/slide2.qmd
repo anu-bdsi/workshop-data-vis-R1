@@ -499,7 +499,6 @@ ggplot(penguins_summary,
 
 ## Other coordinate systems
 
-::: incremental
 
 * `coord_cartesian()` for Cartesian coordinate systems (default)
 * `coord_flip()` to flip the x and y 
@@ -507,10 +506,6 @@ ggplot(penguins_summary,
 * `coord_equal()` is essentially `coord_fixed(ratio = 1)`
 * `coord_trans()` to transform the coordinate after the statistical transformation
 * `coord_map()` to use projection based on `mapproj` 
-
-:::
-
-
 
 
 ## Summary
