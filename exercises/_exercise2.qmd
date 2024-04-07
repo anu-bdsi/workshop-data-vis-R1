@@ -12,3 +12,146 @@ format:
 #| include: false
 library(webexercises)
 ```
+
+* Once again, for each exercise make the targetted plot shown. 
+
+### Factorial experiment of bermuda grass with nitrogen (n), phosphorus (p), and potassium (k) fertilizers 
+
+```{webr-r}
+#| autorun: true
+data(welch.bermudagrass, package = "agridat")
+str(welch.bermudagrass)
+```
+
+::: {.panel-tabset}
+
+## Exercise 2A
+
+
+
+```{r echo = FALSE, class = "target"}
+ggplot(welch.bermudagrass, aes(yield, fill = factor(n))) + 
+  geom_density(alpha = 0.2) 
+```
+
+```{webr-r}
+ggplot(welch.bermudagrass, aes(___)) + 
+  geom____(alpha = 0.2)
+```
+
+## Exercise 2B
+
+Now try changing the y-axis so it shows `count` instead of `density`.
+
+```{r echo = FALSE, class = "target"}
+ggplot(welch.bermudagrass, aes(yield, fill = factor(n))) + 
+  geom_density(alpha = 0.2, aes(y = after_stat(count))) 
+```
+
+
+```{webr-r}
+ggplot(welch.bermudagrass, aes(___)) + 
+  geom____(alpha = 0.2, 
+           aes(___)) 
+```
+
+## Exercise 2C
+
+Now make the position adjustment so the density is stacked.
+
+```{r echo = FALSE, class = "target"}
+ggplot(welch.bermudagrass, aes(yield, fill = factor(n))) + 
+  geom_density(alpha = 0.2, position = "stack") 
+```
+
+
+```{webr-r}
+ggplot(welch.bermudagrass, aes(___)) + 
+  geom____(alpha = 0.2, ___) 
+```
+
+
+## Exercise 2D
+
+Adjust the position to show the density as a proportion of the total across the yield like the graph below.
+
+```{r echo = FALSE, class = "target"}
+ggplot(welch.bermudagrass, aes(yield, fill = factor(n))) + 
+  geom_density(alpha = 0.2, position = "fill") 
+```
+
+
+```{webr-r}
+ggplot(welch.bermudagrass, aes(___)) + 
+  geom____(alpha = 0.2, ___) 
+```
+
+:::
+
+
+### Randomized Trial of Six Therapies for Scurvy
+
+```{webr-r}
+#| autorun: true
+data(scurvy, package = "medicaldata")
+str(scurvy)
+```
+
+::: {.panel-tabset}
+
+## Exercise 2E
+
+```{r echo = FALSE, class = "target"}
+ggplot(scurvy, aes(gum_rot_d6, fill = skin_sores_d6)) + 
+  geom_bar()
+```
+
+
+```{webr-r}
+ggplot(scurvy, aes(___, fill = ___)) + 
+  geom____()
+```
+
+## Exercise 2F
+
+```{r echo = FALSE, class = "target"}
+ggplot(scurvy, aes(gum_rot_d6, fill = skin_sores_d6)) + 
+  geom_bar(position = position_dodge2(preserve = "single"))
+```
+
+
+```{webr-r}
+ggplot(scurvy, aes(___, fill = ___)) + 
+  geom____(position = position_dodge2(preserve = ___))
+```
+
+## Exercise 2G
+
+```{r echo = FALSE, class = "target"}
+ggplot(scurvy, aes(gum_rot_d6, fill = skin_sores_d6)) + 
+  geom_bar(position = "fill")
+```
+
+
+```{webr-r}
+ggplot(scurvy, aes(___, fill = ___)) + 
+  geom____(position = ___)
+```
+
+## Exercise 2H
+
+```{r echo = FALSE, class = "target"}
+ggplot(scurvy, aes(gum_rot_d6, fill = skin_sores_d6)) + 
+  geom_bar(position = "fill") +
+  coord_polar("y")
+```
+
+
+```{webr-r}
+ggplot(scurvy, aes(___, fill = ___)) + 
+  geom____(position = ___) +
+  coord____
+```
+
+
+:::

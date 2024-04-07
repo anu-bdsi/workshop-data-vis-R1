@@ -19,6 +19,7 @@ webr:
     - palmerpenguins
     - tidyverse
     - agridat
+    - medicaldata
 ---
 
 ```{r setup, include = FALSE}
@@ -26,6 +27,7 @@ library(webexercises)
 library(lubridate)
 library(tidyverse)
 library(agridat)
+library(medicaldata)
 ex_tabset <- function(id) {
   paste0("[_Exercise ", id, "_](#tabset-1-", id, "-tab){onclick=",
          'document.getElementById(', "'tabset-1-", id, "-tab').click();",
@@ -90,6 +92,7 @@ content |>
 ::: {.panel-tabset}
 
 ## Exercise 1
+
 
 {{< include "exercises/_exercise1.qmd" >}}
 
