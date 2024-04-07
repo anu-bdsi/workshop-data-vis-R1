@@ -103,6 +103,8 @@ ggplot(pigdata, aes(period, weight, group = pig, color = treatment)) +
   geom_line()
 ```
 
+This is a hard one! The data needs to be reshaped before plotting. 
+
 ```{webr-r}
 pigdata <- crampton.pig |> 
   # make id for each pig
@@ -114,7 +116,7 @@ pigdata <- crampton.pig |>
   # change the order of the levels
   mutate(period = factor(period, levels = c("initial", "final"))
 
-ggplot(pigdata, aes(period, weight, group = pig, color = treatment)) +
+ggplot(pigdata, aes(___, ___, group = pig, color = ___)) +
   geom_line()
 ```
 
