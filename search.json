@@ -39,7 +39,7 @@
     "href": "materials.html#exercises",
     "title": "Materials",
     "section": "🏋️‍♀️ Exercises",
-    "text": "🏋️‍♀️ Exercises\n\nExercise 1Exercise 2Exercise 3\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\n\nReflect on learning objectives\n\n\n\nYou should be able to:\n\n\n Create basic plots using ggplot2\n\n\n\n\n\n\n\n\n\n\n\n\nReflect on learning objectives\n\n\n\nYou should be able to:\n\n\n Understand the concept of the grammar of graphics\n\n\n\n\n\n\n\n\n\n\n\n\nReflect on learning objectives\n\n\n\nYou should be able to:\n\n\n Construct plots with multiple layers in ggplot2"
+    "text": "🏋️‍♀️ Exercises\n\nExercise 1Exercise 2Exercise 3\n\n\n\nFor each exercise, you will be shown the structure of the dataset and then make a targetted plot shown.\nYou can find more details about the dataset by looking at the documentation in your R console, e.g. enter ?agridat::crampton.pig for information of the diamonds dataset.\n\n\nWeight gain in pigs for different treatments\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nExercise 1AExercise 1BExercise 1CExercise 1DExercise 1E\n\n\n\n\n\n\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\n\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\n\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\n\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\n\n\n\n\n\n\nThis is a hard one! The data needs to be reshaped before plotting.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\nPrices of over 50,000 round cut diamonds\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nExercise 1FExercise 1GExercise 1HExercise 1IExercise 1J\n\n\n\n\n\n\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nTry changing the bin width to see how the histogram changes.\n\n\n\n\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\n\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\n\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\n\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\n\n\n\n\nReflect on learning objectives\n\n\n\nYou should be able to:\n\n\n Create basic plots using ggplot2\n\n\n\n\n\n\n\n\nOnce again, for each exercise make the targetted plot shown.\n\n\nFactorial experiment of bermuda grass with nitrogen (n), phosphorus (p), and potassium (k) fertilizers\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nExercise 2AExercise 2BExercise 2CExercise 2D\n\n\n\n\n\n\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nNow try changing the y-axis so it shows count instead of density.\n\n\n\n\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nNow make the position adjustment so the density is stacked.\n\n\n\n\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nAdjust the position to show the density as a proportion of the total across the yield like the graph below.\n\n\n\n\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\nRandomized Trial of Six Therapies for Scurvy\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nExercise 2EExercise 2FExercise 2GExercise 2H\n\n\n\n\n\n\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\n\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\n\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\n\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\n\n\n\n\nReflect on learning objectives\n\n\n\nYou should be able to:\n\n\n Understand the concept of the grammar of graphics\n\n\n\n\n\n\n\n\nFor each exercise, wrangle the data in the format required then draw the targetted plot required.\n\n\nU.S. historical crop yields by state\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nExercise 3AExercise 3BExercise 3C\n\n\n\n\n\n\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\n\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\n\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\n\n\n\n\nReflect on learning objectives\n\n\n\nYou should be able to:\n\n\n Construct plots with multiple layers in ggplot2"
   },
   {
     "objectID": "slides/slide4.html#current-learning-objective",
@@ -427,6 +427,20 @@
     "text": "Deconstructing barplot"
   },
   {
+    "objectID": "slides/slide2.html#layer-data",
+    "href": "slides/slide2.html#layer-data",
+    "title": "The Grammar of Graphics",
+    "section": "Layer data",
+    "text": "Layer data\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "slides/slide2.html#accessing-layer-data",
+    "href": "slides/slide2.html#accessing-layer-data",
+    "title": "The Grammar of Graphics",
+    "section": "Accessing layer data",
+    "text": "Accessing layer data\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nEquivalent to the old syntaxes y = stat(density) and y = ..density.."
+  },
+  {
     "objectID": "slides/slide2.html#visualising-amounts-and-proportions",
     "href": "slides/slide2.html#visualising-amounts-and-proportions",
     "title": "The Grammar of Graphics",
@@ -434,18 +448,11 @@
     "text": "Visualising amounts and proportions\n\n\n\n\n  \n\n\n\n  \n    \n  \n\n\n\n\n\n  \n    \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBARPLOT\n\n \n\n  \n\n\n\n  \n    \n  \n\n\n\n\n\n  \n    \n  \n\n\n\n\n\n\n\n\n\n\n\n\nSCATTER PLOT\n\n \n\n  \n\n\n\n  \n    \n  \n\n\n\n\n\n  \n    \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGROUPED\nBARPLOT\n\n \n\n  \n\n\n\n  \n    \n  \n\n\n\n\n\n  \n    \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSTACKED\nBARPLOT\n\n \n\n  \n\n\n\n  \n    \n  \n\n\n\n\n\n  \n    \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHEATMAP\n\n\n\n\n  \n\n\n\n  \n    \n  \n\n\n\n\n  \n    \n  \n\n\n\n\n\n\n\n  \n    \n  \n\n\n\n\n\n\n\n\nPIE CHART\n\n \n\n  \n\n\n\n  \n    \n  \n\n\n\n\n\n  \n    \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSTACKED\nPERCENTAGE\nBARPLOT\n\n \n\n  \n\n\n\n  \n    \n  \n\n\n\n\n\n  \n    \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSTACKED\nDENSITY\nPLOT\n\n\n\n\n\ngeom_bar()\ngeom_col()\ngeom_point()\ngeom_tile()\ngeom_density()"
   },
   {
-    "objectID": "slides/slide2.html#a-barplot-with-geom_bar-with-a-categorical-variable",
-    "href": "slides/slide2.html#a-barplot-with-geom_bar-with-a-categorical-variable",
+    "objectID": "slides/slide2.html#a-barplot-with-geom_bar",
+    "href": "slides/slide2.html#a-barplot-with-geom_bar",
     "title": "The Grammar of Graphics",
-    "section": "A barplot with geom_bar() with a categorical variable",
-    "text": "A barplot with geom_bar() with a categorical variable\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nIf you have a categorical variable, then you usually want to study the frequency of its categories.\nHere the stat = \"count\" is computing the frequencies for each category for you."
-  },
-  {
-    "objectID": "slides/slide2.html#a-barplot-with-geom_bar-with-a-discrete-numerical-variable",
-    "href": "slides/slide2.html#a-barplot-with-geom_bar-with-a-discrete-numerical-variable",
-    "title": "The Grammar of Graphics",
-    "section": "A barplot with geom_bar() with a discrete numerical variable",
-    "text": "A barplot with geom_bar() with a discrete numerical variable\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nSupplying a numerical variable to the x-axis results in a continuous scale.\nIf you want to study each level in a discrete variable, then you may want to convert the discrete variable to a factor instead x = factor(year)."
+    "section": "A barplot with geom_bar()",
+    "text": "A barplot with geom_bar()\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nIf you have a categorical variable, then you usually want to study the frequency of its categories.\nHere the stat = \"count\" is computing the frequencies for each category for you.\n\nYou can alternatively use stat_count() and change the geom."
   },
   {
     "objectID": "slides/slide2.html#summary-data",
@@ -459,35 +466,49 @@
     "href": "slides/slide2.html#a-barplot-with-geom_col",
     "title": "The Grammar of Graphics",
     "section": "A barplot with geom_col()",
-    "text": "A barplot with geom_col()\n\n\nIn this case, you don’t need stat = \"count\" to do the counting for you and use geom_col() instead.\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nThis is essential a short hand for geom_bar(stat = \"identity\") where stat = \"identity\" means that you will take the value as supplied without any statistical transformation."
+    "text": "A barplot with geom_col()\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nIn this case, you don’t need stat = \"count\" to do the counting for you and use geom_col() instead.\nThis is essential a short hand for geom_bar(stat = \"identity\") where stat = \"identity\" means that you will take the value as supplied without any statistical transformation."
   },
   {
     "objectID": "slides/slide2.html#a-stacked-barplot-with-stack",
     "href": "slides/slide2.html#a-stacked-barplot-with-stack",
     "title": "The Grammar of Graphics",
     "section": "A stacked barplot with \"stack\"",
-    "text": "A stacked barplot with \"stack\"\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+    "text": "A stacked barplot with \"stack\"\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
     "objectID": "slides/slide2.html#a-grouped-barplot-with-dodge",
     "href": "slides/slide2.html#a-grouped-barplot-with-dodge",
     "title": "The Grammar of Graphics",
     "section": "A grouped barplot with \"dodge\"",
-    "text": "A grouped barplot with \"dodge\"\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\"dodge\" = position_dodge()\n\n\n\n\n\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+    "text": "A grouped barplot with \"dodge\"\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\"dodge\" = position_dodge()\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
     "objectID": "slides/slide2.html#another-grouped-barplot-with-dodge2",
     "href": "slides/slide2.html#another-grouped-barplot-with-dodge2",
     "title": "The Grammar of Graphics",
     "section": "Another grouped barplot with \"dodge2\"",
-    "text": "Another grouped barplot with \"dodge2\"\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\"dodge2\" uses a different algorithm to recalculate the x-values with an option to add a padding between geometric objects"
+    "text": "Another grouped barplot with \"dodge2\"\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\"dodge2\" uses a different algorithm to recalculate the x-values with an option to add a padding between geometric objects"
   },
   {
     "objectID": "slides/slide2.html#stacked-percentage-barplot-with-fill",
     "href": "slides/slide2.html#stacked-percentage-barplot-with-fill",
     "title": "The Grammar of Graphics",
     "section": "Stacked percentage barplot with \"fill\"",
-    "text": "Stacked percentage barplot with \"fill\"\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nIf you want to compare the percentages between the different x, then position = \"fill\" can be handy."
+    "text": "Stacked percentage barplot with \"fill\"\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nIf you want to compare the percentages between the different x, then position = \"fill\" can be handy."
+  },
+  {
+    "objectID": "slides/slide2.html#pie-or-donut-charts-with-coord_polar",
+    "href": "slides/slide2.html#pie-or-donut-charts-with-coord_polar",
+    "title": "The Grammar of Graphics",
+    "section": "Pie or donut charts with coord_polar()",
+    "text": "Pie or donut charts with coord_polar()\n\nThe default coordinate system is the Cartesian coordinate system.\n\n\n\nBut you can change this to a polar coordinate system like below.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "slides/slide2.html#other-coordinate-systems",
+    "href": "slides/slide2.html#other-coordinate-systems",
+    "title": "The Grammar of Graphics",
+    "section": "Other coordinate systems",
+    "text": "Other coordinate systems\n\ncoord_cartesian() for Cartesian coordinate systems (default)\ncoord_flip() to flip the x and y\ncoord_fixed() to use a fixed aspect ratio\ncoord_equal() is essentially coord_fixed(ratio = 1)\ncoord_trans() to transform the coordinate after the statistical transformation\ncoord_map() to use projection based on mapproj"
   },
   {
     "objectID": "slides/slide2.html#summary",

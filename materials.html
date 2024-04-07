@@ -213,7 +213,7 @@ ul.task-list li input[type="checkbox"] {
 // Document level settings ----
 
 // Determine if we need to install R packages
-globalThis.qwebrInstallRPackagesList = ['palmerpenguins', 'tidyverse', 'agridat'];
+globalThis.qwebrInstallRPackagesList = ['palmerpenguins', 'tidyverse', 'agridat', 'medicaldata'];
 
 // Specify possible locations to search for the repository
 globalThis.qwebrPackageRepoURLS = ['https://repo.r-wasm.org/'];
@@ -235,7 +235,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"options":{"dpi":72,"results":"markup","fig-cap":"","fig-width":7,"fig-height":5,"out-width":"700px","label":"unnamed-chunk-1","context":"interactive","warning":"true","classes":"","comment":"","autorun":"false","out-height":"","message":"true","output":"true","read-only":"false"},"code":"\n\n","id":1}];
+globalThis.qwebrCellDetails = [{"options":{"autorun":"true","classes":"","read-only":"false","comment":"","message":"true","dpi":72,"warning":"true","fig-width":7,"fig-height":5,"context":"interactive","results":"markup","out-width":"700px","out-height":"","output":"true","fig-cap":"","label":"unnamed-chunk-1"},"id":1,"code":"data(crampton.pig, package = \"agridat\")\nstr(crampton.pig)"},{"options":{"autorun":"false","classes":"","read-only":"false","comment":"","message":"true","dpi":72,"warning":"true","fig-width":7,"fig-height":5,"context":"interactive","results":"markup","out-width":"700px","out-height":"","output":"true","fig-cap":"","label":"unnamed-chunk-2"},"id":2,"code":"ggplot(crampton.pig, aes(___)) + \n  geom_density() "},{"options":{"autorun":"false","classes":"","read-only":"false","comment":"","message":"true","dpi":72,"warning":"true","fig-width":7,"fig-height":5,"context":"interactive","results":"markup","out-width":"700px","out-height":"","output":"true","fig-cap":"","label":"unnamed-chunk-3"},"id":3,"code":"ggplot(crampton.pig, aes(___)) + \n  geom____() "},{"options":{"autorun":"false","classes":"","read-only":"false","comment":"","message":"true","dpi":72,"warning":"true","fig-width":7,"fig-height":5,"context":"interactive","results":"markup","out-width":"700px","out-height":"","output":"true","fig-cap":"","label":"unnamed-chunk-4"},"id":4,"code":"ggplot(crampton.pig, aes(___, ___, color = ___, size = ___)) + \n  geom____()"},{"options":{"autorun":"false","classes":"","read-only":"false","comment":"","message":"true","dpi":72,"warning":"true","fig-width":7,"fig-height":5,"context":"interactive","results":"markup","out-width":"700px","out-height":"","output":"true","fig-cap":"","label":"unnamed-chunk-5"},"id":5,"code":"ggplot(crampton.pig, aes(___, ___, fill = ___)) + \n  geom_tile(color = \"black\", linewidth = 2)"},{"options":{"autorun":"false","classes":"","read-only":"false","comment":"","message":"true","dpi":72,"warning":"true","fig-width":7,"fig-height":5,"context":"interactive","results":"markup","out-width":"700px","out-height":"","output":"true","fig-cap":"","label":"unnamed-chunk-6"},"id":6,"code":"pigdata <- crampton.pig |> \n  # make id for each pig\n  mutate(pig = 1:n()) |> \n  rename(initial = weight1,\n           final = weight2) |> \n  # reshape data\n  ___ |> \n  # change the order of the levels\n  mutate(period = factor(period, levels = c(\"initial\", \"final\"))\n\nggplot(pigdata, aes(___, ___, group = pig, color = ___)) +\n  geom_line()"},{"options":{"autorun":"true","classes":"","read-only":"false","comment":"","message":"true","dpi":72,"warning":"true","fig-width":7,"fig-height":5,"context":"interactive","results":"markup","out-width":"700px","out-height":"","output":"true","fig-cap":"","label":"unnamed-chunk-7"},"id":7,"code":"str(diamonds)"},{"options":{"autorun":"false","classes":"","read-only":"false","comment":"","message":"true","dpi":72,"warning":"true","fig-width":7,"fig-height":5,"context":"interactive","results":"markup","out-width":"700px","out-height":"","output":"true","fig-cap":"","label":"unnamed-chunk-8"},"id":8,"code":"ggplot(diamonds, aes(___)) + \n  geom____() "},{"options":{"autorun":"false","classes":"","read-only":"false","comment":"","message":"true","dpi":72,"warning":"true","fig-width":7,"fig-height":5,"context":"interactive","results":"markup","out-width":"700px","out-height":"","output":"true","fig-cap":"","label":"unnamed-chunk-9"},"id":9,"code":"ggplot(diamonds, aes(___)) + \n  geom____(___ = 1) "},{"options":{"autorun":"false","classes":"","read-only":"false","comment":"","message":"true","dpi":72,"warning":"true","fig-width":7,"fig-height":5,"context":"interactive","results":"markup","out-width":"700px","out-height":"","output":"true","fig-cap":"","label":"unnamed-chunk-10"},"id":10,"code":"ggplot(diamonds, aes(___, ___, fill = ___)) + \n  geom____()"},{"options":{"autorun":"false","classes":"","read-only":"false","comment":"","message":"true","dpi":72,"warning":"true","fig-width":7,"fig-height":5,"context":"interactive","results":"markup","out-width":"700px","out-height":"","output":"true","fig-cap":"","label":"unnamed-chunk-11"},"id":11,"code":"ggplot(heart2, aes(___, ___)) + \n  geom_density_2d_filled()"},{"options":{"autorun":"false","classes":"","read-only":"false","comment":"","message":"true","dpi":72,"warning":"true","fig-width":7,"fig-height":5,"context":"interactive","results":"markup","out-width":"700px","out-height":"","output":"true","fig-cap":"","label":"unnamed-chunk-12"},"id":12,"code":"ggplot(diamonds, aes(___, ___)) + \n  geom____()"},{"options":{"autorun":"true","classes":"","read-only":"false","comment":"","message":"true","dpi":72,"warning":"true","fig-width":7,"fig-height":5,"context":"interactive","results":"markup","out-width":"700px","out-height":"","output":"true","fig-cap":"","label":"unnamed-chunk-13"},"id":13,"code":"data(welch.bermudagrass, package = \"agridat\")\nstr(welch.bermudagrass)"},{"options":{"autorun":"false","classes":"","read-only":"false","comment":"","message":"true","dpi":72,"warning":"true","fig-width":7,"fig-height":5,"context":"interactive","results":"markup","out-width":"700px","out-height":"","output":"true","fig-cap":"","label":"unnamed-chunk-14"},"id":14,"code":"ggplot(welch.bermudagrass, aes(___)) + \n  geom____(alpha = 0.2)"},{"options":{"autorun":"false","classes":"","read-only":"false","comment":"","message":"true","dpi":72,"warning":"true","fig-width":7,"fig-height":5,"context":"interactive","results":"markup","out-width":"700px","out-height":"","output":"true","fig-cap":"","label":"unnamed-chunk-15"},"id":15,"code":"ggplot(welch.bermudagrass, aes(___)) + \n  geom____(alpha = 0.2, \n           aes(___)) "},{"options":{"autorun":"false","classes":"","read-only":"false","comment":"","message":"true","dpi":72,"warning":"true","fig-width":7,"fig-height":5,"context":"interactive","results":"markup","out-width":"700px","out-height":"","output":"true","fig-cap":"","label":"unnamed-chunk-16"},"id":16,"code":"ggplot(welch.bermudagrass, aes(___)) + \n  geom____(alpha = 0.2, ___) "},{"options":{"autorun":"false","classes":"","read-only":"false","comment":"","message":"true","dpi":72,"warning":"true","fig-width":7,"fig-height":5,"context":"interactive","results":"markup","out-width":"700px","out-height":"","output":"true","fig-cap":"","label":"unnamed-chunk-17"},"id":17,"code":"ggplot(welch.bermudagrass, aes(___)) + \n  geom____(alpha = 0.2, ___) "},{"options":{"autorun":"true","classes":"","read-only":"false","comment":"","message":"true","dpi":72,"warning":"true","fig-width":7,"fig-height":5,"context":"interactive","results":"markup","out-width":"700px","out-height":"","output":"true","fig-cap":"","label":"unnamed-chunk-18"},"id":18,"code":"data(scurvy, package = \"medicaldata\")\nstr(scurvy)"},{"options":{"autorun":"false","classes":"","read-only":"false","comment":"","message":"true","dpi":72,"warning":"true","fig-width":7,"fig-height":5,"context":"interactive","results":"markup","out-width":"700px","out-height":"","output":"true","fig-cap":"","label":"unnamed-chunk-19"},"id":19,"code":"ggplot(scurvy, aes(___, fill = ___)) + \n  geom____()"},{"options":{"autorun":"false","classes":"","read-only":"false","comment":"","message":"true","dpi":72,"warning":"true","fig-width":7,"fig-height":5,"context":"interactive","results":"markup","out-width":"700px","out-height":"","output":"true","fig-cap":"","label":"unnamed-chunk-20"},"id":20,"code":"ggplot(scurvy, aes(___, fill = ___)) + \n  geom____(position = position_dodge2(preserve = ___))"},{"options":{"autorun":"false","classes":"","read-only":"false","comment":"","message":"true","dpi":72,"warning":"true","fig-width":7,"fig-height":5,"context":"interactive","results":"markup","out-width":"700px","out-height":"","output":"true","fig-cap":"","label":"unnamed-chunk-21"},"id":21,"code":"ggplot(scurvy, aes(___, fill = ___)) + \n  geom____(position = ___)"},{"options":{"autorun":"false","classes":"","read-only":"false","comment":"","message":"true","dpi":72,"warning":"true","fig-width":7,"fig-height":5,"context":"interactive","results":"markup","out-width":"700px","out-height":"","output":"true","fig-cap":"","label":"unnamed-chunk-22"},"id":22,"code":"ggplot(scurvy, aes(___, fill = ___)) + \n  geom____(position = ___) +\n  coord____"},{"options":{"autorun":"true","classes":"","read-only":"false","comment":"","message":"true","dpi":72,"warning":"true","fig-width":7,"fig-height":5,"context":"interactive","results":"markup","out-width":"700px","out-height":"","output":"true","fig-cap":"","label":"unnamed-chunk-23"},"id":23,"code":"data(nass.wheat, package = \"agridat\")\ndata(nass.corn, package = \"agridat\")\ndata(nass.soybean, package = \"agridat\")\n\nstr(nass.wheat)\nstr(nass.corn)\nstr(nass.soybean)"},{"options":{"autorun":"false","classes":"","read-only":"false","comment":"","message":"true","dpi":72,"warning":"true","fig-width":7,"fig-height":5,"context":"interactive","results":"markup","out-width":"700px","out-height":"","output":"true","fig-cap":"","label":"unnamed-chunk-24"},"id":24,"code":"crops_data <- ___\n\nggplot(crops_data, aes(___, ___)) + \n  geom____() + \n  geom____(width = 0.1)"},{"options":{"autorun":"false","classes":"","read-only":"false","comment":"","message":"true","dpi":72,"warning":"true","fig-width":7,"fig-height":5,"context":"interactive","results":"markup","out-width":"700px","out-height":"","output":"true","fig-cap":"","label":"unnamed-chunk-25"},"id":25,"code":"wheat2011_data <- nass.wheat |> \n  ___(year == 2011) \n\nhighlight <- function(.data) filter(.data, acres > 4000000 | yield > 80)\n\nggplot(wheat2011_data, aes(___, yield)) + \n  ___() + \n  ___(data = ___, color = \"red\") + "},{"options":{"autorun":"false","classes":"","read-only":"false","comment":"","message":"true","dpi":72,"warning":"true","fig-width":7,"fig-height":5,"context":"interactive","results":"markup","out-width":"700px","out-height":"","output":"true","fig-cap":"","label":"unnamed-chunk-26"},"id":26,"code":"wheat2011_data_with_map <- nass.wheat |> \n  filter(year == 2011) |> \n  mutate(region = tolower(state)) |>  \n  right_join(map_data(\"state\"), by = \"region\")\n\nggplot(wheat2011_data_with_map, aes(___, ___)) + \n  geom_polygon(aes(___), color = \"black\") +\n  ___(\"label\", x = -120, y = 27, label = \"2011\", size = 8)"}];
 
 </script>
 <script type="module">
@@ -956,6 +956,7 @@ globalThis.qwebrExecuteCode = async function (
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="assets/webex.css">
 <link rel="stylesheet" href="assets/custom.css">
+<link rel="stylesheet" href="assets/exercises.css">
 </head>
 
 <body class="nav-fixed">
@@ -1275,11 +1276,164 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 <section id="exercises" class="level2">
 <h2 class="anchored" data-anchor-id="exercises">🏋️‍♀️ Exercises</h2>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Exercise 1</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Exercise 2</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Exercise 3</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-6-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-1" role="tab" aria-controls="tabset-6-1" aria-selected="true">Exercise 1</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-2" role="tab" aria-controls="tabset-6-2" aria-selected="false">Exercise 2</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-3" role="tab" aria-controls="tabset-6-3" aria-selected="false">Exercise 3</a></li></ul>
 <div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div id="tabset-6-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-6-1-tab">
+<ul>
+<li><p>For each exercise, you will be shown the structure of the dataset and then make a targetted plot shown.</p></li>
+<li><p>You can find more details about the dataset by looking at the documentation in your R console, e.g.&nbsp;enter <code>?agridat::crampton.pig</code> for information of the diamonds dataset.</p></li>
+</ul>
+<section id="weight-gain-in-pigs-for-different-treatments" class="level3">
+<h3 class="anchored" data-anchor-id="weight-gain-in-pigs-for-different-treatments">Weight gain in pigs for different treatments</h3>
 <div id="qwebr-insertion-location-1"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Exercise 1A</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Exercise 1B</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Exercise 1C</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false">Exercise 1D</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false">Exercise 1E</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div class="cell target" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="materials_files/figure-html/ex01s-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="288"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="qwebr-insertion-location-2"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div class="cell target" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="materials_files/figure-html/ex03s-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="288"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="qwebr-insertion-location-3"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<div class="cell target" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="materials_files/figure-html/ex04s-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="480"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="qwebr-insertion-location-4"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+</div>
+<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
+<div class="cell target">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="materials_files/figure-html/ex05s-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="qwebr-insertion-location-5"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+</div>
+<div id="tabset-1-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-5-tab">
+<div class="cell target">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="materials_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>This is a hard one! The data needs to be reshaped before plotting.</p>
+<div id="qwebr-insertion-location-6"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+</div>
+</div>
+</div>
+</section>
+<section id="prices-of-over-50000-round-cut-diamonds" class="level3">
+<h3 class="anchored" data-anchor-id="prices-of-over-50000-round-cut-diamonds">Prices of over 50,000 round cut diamonds</h3>
+<div id="qwebr-insertion-location-7"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">Exercise 1F</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Exercise 1G</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false">Exercise 1H</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-4" role="tab" aria-controls="tabset-2-4" aria-selected="false">Exercise 1I</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-5" role="tab" aria-controls="tabset-2-5" aria-selected="false">Exercise 1J</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<div class="cell target">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="materials_files/figure-html/ex07s-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="qwebr-insertion-location-8"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<p>Try changing the bin width to see how the histogram changes.</p>
+<div class="cell target">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="materials_files/figure-html/ex08s-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="qwebr-insertion-location-9"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+</div>
+<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
+<div class="cell target">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="materials_files/figure-html/ex10s-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="qwebr-insertion-location-10"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+</div>
+<div id="tabset-2-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-4-tab">
+<div class="cell target">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="materials_files/figure-html/ex11s-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="qwebr-insertion-location-11"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+</div>
+<div id="tabset-2-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-5-tab">
+<div class="cell target">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="materials_files/figure-html/ex12s-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="qwebr-insertion-location-12"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+</div>
+</div>
+</div>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1298,8 +1452,138 @@ You should be able to:
 </ul>
 </div>
 </div>
+</section>
 </div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div id="tabset-6-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-2-tab">
+<ul>
+<li>Once again, for each exercise make the targetted plot shown.</li>
+</ul>
+<section id="factorial-experiment-of-bermuda-grass-with-nitrogen-n-phosphorus-p-and-potassium-k-fertilizers" class="level3">
+<h3 class="anchored" data-anchor-id="factorial-experiment-of-bermuda-grass-with-nitrogen-n-phosphorus-p-and-potassium-k-fertilizers">Factorial experiment of bermuda grass with nitrogen (n), phosphorus (p), and potassium (k) fertilizers</h3>
+<div id="qwebr-insertion-location-13"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true">Exercise 2A</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false">Exercise 2B</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false">Exercise 2C</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-4" role="tab" aria-controls="tabset-3-4" aria-selected="false">Exercise 2D</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<div class="cell target">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="materials_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="qwebr-insertion-location-14"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+</div>
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<p>Now try changing the y-axis so it shows <code>count</code> instead of <code>density</code>.</p>
+<div class="cell target">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="materials_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="qwebr-insertion-location-15"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+</div>
+<div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
+<p>Now make the position adjustment so the density is stacked.</p>
+<div class="cell target">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="materials_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="qwebr-insertion-location-16"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+</div>
+<div id="tabset-3-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-4-tab">
+<p>Adjust the position to show the density as a proportion of the total across the yield like the graph below.</p>
+<div class="cell target">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="materials_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="qwebr-insertion-location-17"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+</div>
+</div>
+</div>
+</section>
+<section id="randomized-trial-of-six-therapies-for-scurvy" class="level3">
+<h3 class="anchored" data-anchor-id="randomized-trial-of-six-therapies-for-scurvy">Randomized Trial of Six Therapies for Scurvy</h3>
+<div id="qwebr-insertion-location-18"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true">Exercise 2E</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false">Exercise 2F</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-3" role="tab" aria-controls="tabset-4-3" aria-selected="false">Exercise 2G</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-4" role="tab" aria-controls="tabset-4-4" aria-selected="false">Exercise 2H</a></li></ul>
+<div class="tab-content">
+<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
+<div class="cell target">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="materials_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="qwebr-insertion-location-19"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+</div>
+<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
+<div class="cell target">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="materials_files/figure-html/unnamed-chunk-10-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="qwebr-insertion-location-20"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+</div>
+<div id="tabset-4-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-3-tab">
+<div class="cell target">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="materials_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="qwebr-insertion-location-21"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+</div>
+<div id="tabset-4-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-4-tab">
+<div class="cell target">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="materials_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="qwebr-insertion-location-22"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+</div>
+</div>
+</div>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1318,8 +1602,60 @@ You should be able to:
 </ul>
 </div>
 </div>
+</section>
 </div>
-<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<div id="tabset-6-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-3-tab">
+<ul>
+<li>For each exercise, wrangle the data in the format required then draw the targetted plot required.</li>
+</ul>
+<section id="u.s.-historical-crop-yields-by-state" class="level3">
+<h3 class="anchored" data-anchor-id="u.s.-historical-crop-yields-by-state">U.S. historical crop yields by state</h3>
+<div id="qwebr-insertion-location-23"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-5-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-1" role="tab" aria-controls="tabset-5-1" aria-selected="true">Exercise 3A</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-2" role="tab" aria-controls="tabset-5-2" aria-selected="false">Exercise 3B</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-3" role="tab" aria-controls="tabset-5-3" aria-selected="false">Exercise 3C</a></li></ul>
+<div class="tab-content">
+<div id="tabset-5-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-5-1-tab">
+<div class="cell target">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="materials_files/figure-html/unnamed-chunk-14-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="qwebr-insertion-location-24"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+</div>
+<div id="tabset-5-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-2-tab">
+<div class="cell target">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="materials_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="qwebr-insertion-location-25"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+</div>
+<div id="tabset-5-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-3-tab">
+<div class="cell target">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="materials_files/figure-html/unnamed-chunk-16-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="qwebr-insertion-location-26"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+</div>
+</div>
+</div>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1338,6 +1674,7 @@ You should be able to:
 </ul>
 </div>
 </div>
+</section>
 </div>
 </div>
 </div>
