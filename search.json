@@ -81,7 +81,7 @@
     "href": "slides/slide3.html#layer-specific-data-and-aesthetic-mapping",
     "title": "Drawing multiple layers with ggplot2",
     "section": "Layer-specific data and aesthetic mapping",
-    "text": "Layer-specific data and aesthetic mapping\n\n\nFor each layer, aesthetic and/or data can be overwritten"
+    "text": "Layer-specific data and aesthetic mapping\n\n\n\n\nFor each layer, aesthetic and/or data can be overwritten."
   },
   {
     "objectID": "slides/slide3.html#illustrative-data-iowa-farmland-values-by-county",
@@ -123,7 +123,28 @@
     "href": "slides/slide3.html#summary",
     "title": "Drawing multiple layers with ggplot2",
     "section": "Summary",
-    "text": "Summary"
+    "text": "Summary\n\nYou can construct plots with multiple layers in ggplot2.\nThe order of the layer matters.\n\n\n\n\n\nA layer inherits the data and mapping from the initialised ggplot object by default\nBut the data and mappings for each layer can be overwritten."
+  },
+  {
+    "objectID": "slides/slide1.html#teaching-team",
+    "href": "slides/slide1.html#teaching-team",
+    "title": "Drawing plots with ggplot2",
+    "section": "Teaching team",
+    "text": "Teaching team\n\nDr. Emi TanakaJeremias IvanAudrey PrasetyaRyan O’DonnellNils Kreuter\n\n\n\n\n\n Academic statistician passionate about data science and open source software\n\n\n Currently, Deputy Director of ANU Biological Data Science Institute and Executive Editor of R Journal\n\n\n PhD in Statistical Bioinformatics\n\n\n BSci (Adv Maths) with major in Mathematics and Statistics\n\n\n Loves data and coding\n\n\n         https://emitanaka.org      @statsgen      fosstodon.org/@emitanaka\n\n\n\n\n\n\n 2nd year of PhD student at ANU, working on phylogenomics methods to study hybridisation\n\n\n BSci in Bioinformatics\n\n\n Enjoy hiking and science\n\n\n jeremiasivan\n\n\n\n\n\n\n\n\n (Almost finishing) PhD student @Moritz Lab, E&E Division, RSB, ANU\n\n\n Working on historical biogeography of Indo-Australian birds\n\n\n BSc (Hons) with major in Zoology and Ecology & Conservation\n\n\n Loves games, art markets, and FOOD\n\n\n @goaudreymp\n\n\n https://linktr.ee/goaudreymp\n\n\n\n\n\n\n\n\n 3rd Year PhD student @ Linde Lab, E&E Division, RSB, ANU\n\n\n Investigating the evolution of the Australian orchid flora and associated funga\n\n\n MScSt (Biodiversity Science)\n\n\n Loves playing music, reading, nature\n\n\n @rpodonnell\n\n\n rpodonnell.github.io\n\n\n\n\n\n\n\n\n 2nd Year PhD student @ Sequeira Lab, E&E Division, RSB, ANU\n\n\n Identifying social, collective, or coordinated movement behaviour patterns in sharks using tracking data\n\n\n MSc (Marine Biology), BSc (Biology)\n\n\n Loves triathlon, hiking and the ocean\n\n\n @nilskreuter\n\n\n https://linktr.ee/nilskreuter"
+  },
+  {
+    "objectID": "slides/slide1.html#schedule",
+    "href": "slides/slide1.html#schedule",
+    "title": "Drawing plots with ggplot2",
+    "section": "🕙 Schedule",
+    "text": "🕙 Schedule\n\n\n\n\n\n\n\n\n\nTime\nContent\n\n\n\n\n10:00–10:30\nDrawing plots with ggplot2\n\n\n10:30–11:00\nExercise 1\n\n\n11:00–11:30\nThe Grammar of Graphics\n\n\n11:30–12:00\nExercise 2\n\n\n12:00–12:10\nBreak\n\n\n12:10–12:30\nDrawing multiple layers with ggplot2\n\n\n12:30–12:50\nExercise 3\n\n\n12:50–13:00\nWrap up"
+  },
+  {
+    "objectID": "slides/slide1.html#todays-learning-objectives",
+    "href": "slides/slide1.html#todays-learning-objectives",
+    "title": "Drawing plots with ggplot2",
+    "section": "Today’s learning objectives",
+    "text": "Today’s learning objectives\n\n\nCreate basic plots using ggplot2\n\n\nUnderstand the concept of the grammar of graphics\n\n\nConstruct plots with multiple layers in ggplot2\n\n\nAdjust scales and guides within ggplot2"
   },
   {
     "objectID": "slides/slide1.html#current-learning-objective",
@@ -151,7 +172,7 @@
     "href": "slides/slide1.html#basic-structure-of-ggplot",
     "title": "Drawing plots with ggplot2",
     "section": "Basic structure of ggplot",
-    "text": "Basic structure of ggplot\n\n\ndata as data.frame\na set of aesthetic mappings between variables in the data and visual properties\nat least one layer which describes what to render"
+    "text": "Basic structure of ggplot\n\n\ndata as data.frame\na set of aesthetic mappings between variables in the data and visual properties\nat least one layer which describes what to render\nthe coordinate system (explained later)"
   },
   {
     "objectID": "slides/slide1.html#visualising-distributions",
@@ -263,7 +284,7 @@
     "href": "slides/slide1.html#summary",
     "title": "Drawing plots with ggplot2",
     "section": "Summary",
-    "text": "Summary"
+    "text": "Summary\n\n\ndata as data.frame\na set of aesthetic mappings between variables in the data and visual properties\nat least one layer (usually geom_ or stat_ functions) which describes what to render\nthe coordinate system (explained next)"
   },
   {
     "objectID": "slides/slide1.html#ggplot2-cheatsheet",
@@ -298,7 +319,7 @@
     "href": "index.html#preperation",
     "title": "Data Visualisation with R Part 1",
     "section": "🔧 Preperation",
-    "text": "🔧 Preperation\nPlease ensure that you download and install\n\nthe latest version of R,\nthe latest version of RStudio Desktop,\n(Optional) Slack (alternatively you can use the web version), and\nthe following packages by opening RStudio Desktop, then copy and paste the command below in the Console section, pushing Enter after pasting.\n\ninstall.packages(c(\"tidyverse\", \"palmerpenguins\", \"agridat\", \"hexbin\"))\n If you are having issues, see also here or talk to the teaching team.\n\n\n\n\n\n\n Slack workspace (Optional)\n\n\n\nWe use Slack to facilitate communication between workshop participants and the teaching team.\n\nJoin ANU Learning Data Slack Community\n\n\nYou must use your ANU email to sign up.\nUse your full name.\nBy joining, you agree to abide by this code of conduct.\nPlease don’t direct message the teaching team in Slack. Your questions are more likely to be answered in the Slack channels rather than in direct messages.\n\nPlease note that the teaching team does not necessarily actively monitor or attend to the Slack workspace outside of the workshop."
+    "text": "🔧 Preperation\nPlease ensure that you download and install\n\nthe latest version of R,\nthe latest version of RStudio Desktop,\n(Optional) Slack (alternatively you can use the web version), and\nthe following packages by opening RStudio Desktop, then copy and paste the command below in the Console section, pushing Enter after pasting.\n\ninstall.packages(c(\"tidyverse\", \"palmerpenguins\", \"agridat\", \"hexbin\", \"maps\"))\n\nFor Window users, you may need to install Rtools to install R packages.\n\n If you are having issues, see also here or talk to the teaching team.\n\n\n\n\n\n\n Slack workspace (Optional)\n\n\n\nWe use Slack to facilitate communication between workshop participants and the teaching team.\n\nJoin ANU Learning Data Slack Community\n\n\nYou must use your ANU email to sign up.\nUse your full name.\nBy joining, you agree to abide by this code of conduct.\nPlease don’t direct message the teaching team in Slack. Your questions are more likely to be answered in the Slack channels rather than in direct messages.\n\nPlease note that the teaching team does not necessarily actively monitor or attend to the Slack workspace outside of the workshop."
   },
   {
     "objectID": "index.html#teaching-team",
@@ -322,39 +343,11 @@
     "text": "This website is brought to you by the ANU Biological Data Science Institute."
   },
   {
-    "objectID": "slides/slide2.html#teaching-team",
-    "href": "slides/slide2.html#teaching-team",
-    "title": "The Grammar of Graphics",
-    "section": "Teaching team",
-    "text": "Teaching team\n\nDr. Emi TanakaJeremias IvanAudrey PrasetyaRyan O’DonnellNils Kreuter\n\n\n\n\n\n Academic statistician passionate about data science and open source software\n\n\n Currently, Deputy Director of ANU Biological Data Science Institute and Executive Editor of R Journal\n\n\n PhD in Statistical Bioinformatics\n\n\n BSci (Adv Maths) with major in Mathematics and Statistics\n\n\n Loves data and coding\n\n\n         https://emitanaka.org      @statsgen      fosstodon.org/@emitanaka\n\n\n\n\n\n\n 2nd year of PhD student at ANU, working on phylogenomics methods to study hybridisation\n\n\n BSci in Bioinformatics\n\n\n Enjoy hiking and science\n\n\n jeremiasivan\n\n\n\n\n\n\n\n\n (Almost finishing) PhD student @Moritz Lab, E&E Division, RSB, ANU\n\n\n Working on historical biogeography of Indo-Australian birds\n\n\n BSc (Hons) with major in Zoology and Ecology & Conservation\n\n\n Loves games, art markets, and FOOD\n\n\n @goaudreymp\n\n\n https://linktr.ee/goaudreymp\n\n\n\n\n\n\n\n\n 3rd Year PhD student @ Linde Lab, E&E Division, RSB, ANU\n\n\n Investigating the evolution of the Australian orchid flora and associated funga\n\n\n MScSt (Biodiversity Science)\n\n\n Loves playing music, reading, nature\n\n\n @rpodonnell\n\n\n rpodonnell.github.io\n\n\n\n\n\n\n\n\n 2nd Year PhD student @ Sequeira Lab, E&E Division, RSB, ANU\n\n\n Identifying social, collective, or coordinated movement behaviour patterns in sharks using tracking data\n\n\n MSc (Marine Biology), BSc (Biology)\n\n\n Loves triathlon, hiking and the ocean\n\n\n @nilskreuter\n\n\n https://linktr.ee/nilskreuter"
-  },
-  {
-    "objectID": "slides/slide2.html#schedule",
-    "href": "slides/slide2.html#schedule",
-    "title": "The Grammar of Graphics",
-    "section": "🕙 Schedule",
-    "text": "🕙 Schedule\n\n\n\n\n\n\n\n\n\nTime\nContent\n\n\n\n\n10:00–10:30\nDrawing plots with ggplot2\n\n\n10:30–11:00\nExercise 1\n\n\n11:00–11:30\nThe Grammar of Graphics\n\n\n11:30–12:00\nExercise 2\n\n\n12:00–12:10\nBreak\n\n\n12:10–12:30\nDrawing multiple layers with ggplot2\n\n\n12:30–12:50\nExercise 3\n\n\n12:50–13:00\nWrap up"
-  },
-  {
-    "objectID": "slides/slide2.html#todays-learning-objectives",
-    "href": "slides/slide2.html#todays-learning-objectives",
-    "title": "The Grammar of Graphics",
-    "section": "Today’s learning objectives",
-    "text": "Today’s learning objectives\n\n\nCreate basic plots using ggplot2\n\n\nUnderstand the concept of the grammar of graphics\n\n\nConstruct plots with multiple layers in ggplot2\n\n\nAdjust scales and guides within ggplot2"
-  },
-  {
     "objectID": "slides/slide2.html#current-learning-objective",
     "href": "slides/slide2.html#current-learning-objective",
     "title": "The Grammar of Graphics",
     "section": " Current learning objective",
     "text": "Current learning objective\n\n\n-Create basic plots using ggplot2\n\n\nUnderstand the concept of the grammar of graphics\n\n\n-Construct plots with multiple layers in ggplot2\n\n\n-Adjust scales and guides within ggplot2"
-  },
-  {
-    "objectID": "slides/slide2.html#catalogue-of-plot-types",
-    "href": "slides/slide2.html#catalogue-of-plot-types",
-    "title": "The Grammar of Graphics",
-    "section": "Catalogue of plot types",
-    "text": "Catalogue of plot types"
   },
   {
     "objectID": "slides/slide2.html#plotting",
@@ -392,11 +385,32 @@
     "text": "Plotting from a list of programs\n\n\n\n\n\n\n\n\n\n\nOne function  One complete plot type\nThe number of plots that can be drawn\n\n\n\nThe number of plot functions"
   },
   {
+    "objectID": "slides/slide2.html#catalogue-of-plot-types-not-exhaustive",
+    "href": "slides/slide2.html#catalogue-of-plot-types-not-exhaustive",
+    "title": "The Grammar of Graphics",
+    "section": "Catalogue of plot types (not exhaustive)",
+    "text": "Catalogue of plot types (not exhaustive)"
+  },
+  {
     "objectID": "slides/slide2.html#the-grammar-of-graphics",
     "href": "slides/slide2.html#the-grammar-of-graphics",
     "title": "The Grammar of Graphics",
-    "section": "The Grammar of Graphics",
-    "text": "The Grammar of Graphics\n\n\nIn linguistics, we combine finite number of words to construct vast number of sentences under a shared understanding of the grammar.\nWilkinson (2005) introduced “the grammar of graphics” as a paradigm to describe plots by combining a finite number of components.\nWickham (2010) interpreted the grammar of graphics into the ggplot2 R package (as part of his PhD project)\nThe grammar of graphics paradigm is also interpreted in other programming languages such as Python (e.g., plotnine), Julia (e.g., VegaLite.jl), and JavaScript (e.g., Vega).\n\n\n\n\nL. Wilkinson, The Grammar of Graphics, 2nd ed., vol. 49. in Statistics and computing, no. 1, vol. 49. New York: Springer, 2005. doi: 10.1198/tech.2007.s456.\nH. Wickham, “A Layered Grammar of Graphics,” Journal of Computational and Graphical Statistics, vol. 19, no. 1, pp. 3–28, Jan. 2010, doi: 10.1198/jcgs.2009.07098."
+    "section": "The grammar of graphics",
+    "text": "The grammar of graphics\n\n\nIn linguistics, we combine finite number of words to construct vast number of sentences under a shared understanding of the grammar.\nWilkinson (2005) introduced “the grammar of graphics” as a paradigm to describe plots by combining a finite number of components.\nWickham (2010) interpreted the grammar of graphics into the ggplot2 R package (as part of his PhD project).\nThe grammar of graphics paradigm is also interpreted in other programming languages such as Python (e.g., plotnine) and Julia (e.g., Gadfly.jl, VegaLite.jl).\n\n\n\n\nWilkinson (1999) The Grammar of Graphics. Springer\nWickham (2010) A Layered Grammar of Graphics. Journal of Computational and Graphical Statistics 19 (1) 3-28"
+  },
+  {
+    "objectID": "slides/slide2.html#basic-structure-of-ggplot",
+    "href": "slides/slide2.html#basic-structure-of-ggplot",
+    "title": "The Grammar of Graphics",
+    "section": "Basic structure of ggplot",
+    "text": "Basic structure of ggplot\n\n\ndata as data.frame\na set of aesthetic mappings between variables in the data and visual properties\nat least one layer which describes what to render\nthe coordinate system"
+  },
+  {
+    "objectID": "slides/slide2.html#a-layer-in-ggplot",
+    "href": "slides/slide2.html#a-layer-in-ggplot",
+    "title": "The Grammar of Graphics",
+    "section": "A layer in ggplot",
+    "text": "A layer in ggplot\n\nA layer has five main components:\n\ngeom - the geometric object to use display the data\nstat - statistical transformation to use on the data data\ndata to be displayed in this layer (usually inherited)\nmapping - aesthetic mappings (usually inherited)\nposition - position adjustment"
   },
   {
     "objectID": "slides/slide2.html#deconstructing-histogram",
@@ -501,7 +515,7 @@
     "href": "slides/slide2.html#pie-or-donut-charts-with-coord_polar",
     "title": "The Grammar of Graphics",
     "section": "Pie or donut charts with coord_polar()",
-    "text": "Pie or donut charts with coord_polar()\n\nThe default coordinate system is the Cartesian coordinate system.\n\n\n\nBut you can change this to a polar coordinate system like below.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+    "text": "Pie or donut charts with coord_polar()\n\n\n\nThe default coordinate system is the Cartesian coordinate system.\n\n\n\nBut you can change this to a polar coordinate system like below.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
     "objectID": "slides/slide2.html#other-coordinate-systems",
@@ -515,7 +529,7 @@
     "href": "slides/slide2.html#summary",
     "title": "The Grammar of Graphics",
     "section": "Summary",
-    "text": "Summary"
+    "text": "Summary\n\nA layer has five main components:\n\ngeom - the geometric object to use display the data\nstat - statistical transformation to use on the data data\ndata to be displayed in this layer (usually inherited)\nmapping - aesthetic mappings (usually inherited)\nposition - position adjustment\n\nSome position adjustments include: fill, stack, dodge, dodge2, and identity.\nThe coordinate system is by default the Cartesian coordinate (you will hardly change this)."
   },
   {
     "objectID": "slides/slide-end.html#resources",
