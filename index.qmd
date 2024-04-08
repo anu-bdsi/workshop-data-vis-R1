@@ -29,8 +29,11 @@ Please ensure that you download and install
 - the following packages by opening RStudio Desktop, then copy and paste the command below in the Console section, pushing Enter after pasting.
 
 ```r
-install.packages(c("tidyverse", "palmerpenguins", "agridat", "hexbin"))
+install.packages(c("tidyverse", "palmerpenguins", "agridat", "hexbin", "maps"))
 ```
+
+- For Window users, you may need to [install Rtools](https://cran.r-project.org/bin/windows/Rtools/) to install R packages.
+
 
 {{< fa hand-holding-medical >}} If you are having issues, see also [here](https://learnr.numbat.space/chapter1) or talk to the teaching team.
 
