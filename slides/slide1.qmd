@@ -157,7 +157,7 @@ learning_objectives(1)
 - **data** as `data.frame`
 - a set of **aesthetic** mappings between variables in the data and visual properties
 - at least one **layer** which describes what to render
-
+- the **coordinate system** (explained later)
 
 ## [Visualising]{.anu-black} distributions {background-color="#e3e3e3"}
 
@@ -522,7 +522,7 @@ ggplot(penguins, aes(x = bill_depth_mm, y = bill_length_mm),
 - **data** as `data.frame`
 - a set of **aesthetic** mappings between variables in the data and visual properties
 - at least one **layer** (usually `geom_` or `stat_` functions) which describes what to render
-
+- the **coordinate system** (explained next)
 
 
 ## `ggplot2` cheatsheet

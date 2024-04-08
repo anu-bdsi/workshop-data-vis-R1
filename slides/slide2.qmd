@@ -33,47 +33,19 @@ webr:
 
 ## {{< fa crosshairs >}} Current learning objective
 
+```{r}
+#| include: false
+library(tidyverse)
+source("setup.R")
+```
+
+
 
 ```{r}
 #| results: asis 
 #| echo: false
 learning_objectives(2)
 ```
-
-## Catalogue of plot types  {auto-animate=true}
-
-::: flex
-
-::: {.w-10}
-
-:::
-
-::: {.w-80}
-
-![](images/catalogue-histogram.png){width="19%" data-id="plotting"}
-![](images/catalogue-density.png){width="19%"}
-![](images/catalogue-boxplot.png){width="19%"}
-![](images/catalogue-violin.png){width="19%"}
-![](images/catalogue-dot.png){width="19%"}
-![](images/catalogue-barplot.png){width="19%"}
-![](images/catalogue-stacked-barplot.png){width="19%"}
-![](images/catalogue-grouped-barplot.png){width="19%"}
-![](images/catalogue-stacked-percentage-barplot.png){width="19%"}
-![](images/catalogue-scatter.png){width="19%"}
-![](images/catalogue-hex.png){width="19%"}
-![](images/catalogue-2d-density.png){width="19%"}
-![](images/catalogue-line.png){width="19%"}
-![](images/catalogue-heatmap.png){width="19%"}
-![](images/catalogue-map.png){width="19%"}
-
-:::
-
-::: {.w-10}
-
-:::
-
-
-:::
 
 
 ## Plotting {auto-animate=true}
@@ -140,29 +112,83 @@ learning_objectives(2)
 
 :::
 
+## Catalogue of plot types [(not exhaustive)]{.f3}  {auto-animate=true}
 
-## The Grammar of Graphics
+::: flex
+
+::: {.w-10}
+
+:::
+
+::: {.w-80}
+
+![](images/catalogue-histogram.png){width="19%" data-id="plotting"}
+![](images/catalogue-density.png){width="19%"}
+![](images/catalogue-boxplot.png){width="19%"}
+![](images/catalogue-violin.png){width="19%"}
+![](images/catalogue-dot.png){width="19%"}
+![](images/catalogue-barplot.png){width="19%"}
+![](images/catalogue-stacked-barplot.png){width="19%"}
+![](images/catalogue-grouped-barplot.png){width="19%"}
+![](images/catalogue-stacked-percentage-barplot.png){width="19%"}
+![](images/catalogue-scatter.png){width="19%"}
+![](images/catalogue-hex.png){width="19%"}
+![](images/catalogue-2d-density.png){width="19%"}
+![](images/catalogue-line.png){width="19%"}
+![](images/catalogue-heatmap.png){width="19%"}
+![](images/catalogue-map.png){width="19%"}
+
+:::
+
+::: {.w-10}
+
+:::
+
+
+:::
+
+
+
+
+## The grammar of graphics
 
 ::: incremental
 
-- In linguistics, we combine finite number of words to construct vast number of sentences under a shared understanding of the grammar.
-- Wilkinson (2005) introduced "the grammar of graphics" as a paradigm to describe plots by combining a finite number of components.
-- Wickham (2010) interpreted the grammar of graphics into the `ggplot2` R package (as part of his PhD project) 
-
-- The grammar of graphics paradigm is also interpreted in other programming languages such as Python (e.g., `plotnine`), Julia (e.g., `VegaLite.jl`), and JavaScript (e.g., `Vega`).
+- In linguistics, we **_combine finite number of words to construct vast number of sentences_** under a shared understanding of the grammar.
+- Wilkinson (2005) introduced **"the grammar of graphics"** as a paradigm to describe plots by combining a finite number of components.
+- Wickham (2010) interpreted the grammar of graphics into the `ggplot2` R package (as part of his PhD project). 
+- The grammar of graphics paradigm is also interpreted in other programming languages such as Python (e.g., `plotnine`) and Julia (e.g., `Gadfly.jl`, `VegaLite.jl`).
 
 :::
 
 
 ::: aside 
 
-L. Wilkinson, The Grammar of Graphics, 2nd ed., vol. 49. in Statistics and computing, no. 1, vol. 49. New York: Springer, 2005. doi: 10.1198/tech.2007.s456.
+Wilkinson (1999) The Grammar of Graphics. _Springer_
 
-H. Wickham, “A Layered Grammar of Graphics,” Journal of Computational and Graphical Statistics, vol. 19, no. 1, pp. 3–28, Jan. 2010, doi: 10.1198/jcgs.2009.07098.
+Wickham (2010) A Layered Grammar of Graphics. *Journal of Computational and Graphical Statistics* 19 (1) 3-28
 
 
 :::
 
+## Basic structure of `ggplot`
+
+![](images/ggplot-basic-str.png)
+
+- **data** as `data.frame`
+- a set of **aesthetic** mappings between variables in the data and visual properties
+- at least one [_**layer**_]{.anu-gold} which describes what to render
+- the [_**coordinate system**_]{.anu-gold}
+
+## A layer in `ggplot`
+
+- A layer has five main components:
+  - `geom` - the geometric object to use display the data
+  - `stat` - statistical transformation to use on the data
+data 
+  - `data` to be displayed in this layer (usually inherited)
+  - `mapping` - aesthetic mappings (usually inherited)
+  - `position` - position adjustment
 
 ## Deconstructing histogram {auto-animate=true}
 
@@ -193,7 +219,7 @@ layer_data(ghist, 1)
 
 ::: flex
 
-::: {.w-50}
+::: {.w-60}
 
 ```{webr-r}
 ggplot(penguins, aes(bill_depth_mm)) +
@@ -283,6 +309,7 @@ ggplot(penguins, aes(island)) +
 * Sometimes your input data may already contain pre-computed counts. 
 
 ```{webr-r}
+#| autorun: true
 penguins_summary <- penguins %>% 
   count(sex, species)
 
@@ -415,9 +442,13 @@ ggplot(penguins_summary,
 
 ## Pie or donut charts with `coord_polar()` {auto-animate=true}
 
+::: flex
+
+::: {.w-75}
+
 * The default coordinate system is the Cartesian coordinate system.
 
-. . . 
+::: fragment
 
 * But you can change this to a polar coordinate system like below.
 
@@ -427,6 +458,39 @@ ggplot(penguins_summary,
   geom_col(position = "fill") +
   coord_polar("y")
 ```
+
+:::
+
+:::
+
+::: {.w-25 .pl3}
+
+```{r}
+#| echo: false
+#| fig-width: 6
+#| fig-height: 4
+#| fig-align: center
+library(palmerpenguins)
+penguins_summary <- penguins %>% 
+  count(sex, species)
+g <- ggplot(penguins_summary, 
+       aes(species, n, fill = sex)) +
+  geom_col(position = "fill") +
+  theme_void(base_size = 24)
+
+g 
+g + coord_polar("y")
+```
+
+:::
+
+:::
+
+
+
+
+
+
 
 ## Other coordinate systems
 
@@ -440,6 +504,18 @@ ggplot(penguins_summary,
 
 
 ## Summary
+
+- A layer has five main components:
+  - `geom` - the geometric object to use display the data
+  - `stat` - statistical transformation to use on the data
+data 
+  - `data` to be displayed in this layer (usually inherited)
+  - `mapping` - aesthetic mappings (usually inherited)
+  - `position` - position adjustment
+- Some position adjustments include: `fill`, `stack`, `dodge`, `dodge2`, and `identity`.
+- The coordinate system is by default the Cartesian coordinate (you will hardly change this).
+
+
 
 
 # Exercise time {background-color="#F5EDDE"}
