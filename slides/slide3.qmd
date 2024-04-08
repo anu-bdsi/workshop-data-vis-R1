@@ -77,6 +77,7 @@ ggplot(penguins, aes(x = island, y = body_mass_g)) +
 
 * A layer inherits the data and mapping from the initialised ggplot object by default 
 
+
 <center>
 <img src= "images/ggplot-multiple-layers.png" width="70%">
 </center>
@@ -84,9 +85,12 @@ ggplot(penguins, aes(x = island, y = body_mass_g)) +
 
 ## Layer-specific data and aesthetic mapping
 
-![](images/ggplot-multiple-layers-data-mapping.png)
+<center>
 
-* For each layer, aesthetic and/or data can be overwritten
+![](images/ggplot-multiple-layers-data-mapping.png)
+</center>
+
+* For each layer, aesthetic and/or data can be overwritten.
 
 ## Illustrative data 🚜 Iowa farmland values by county
 
@@ -147,6 +151,18 @@ ggplot(wallace.iowaland, aes(x = long, y = lat)) +
 
 
 ## Summary
+
+* You can construct plots with multiple layers in `ggplot2`.
+* The order of the layer matters. 
+
+<center>
+
+![](images/ggplot-multiple-layers-data-mapping.png)
+
+</center>
+
+* A layer inherits the data and mapping from the initialised ggplot object by default
+* But the data and mappings for each layer can be overwritten.
 
 # Exercise time {background-color="#F5EDDE"}
 
