@@ -76,6 +76,7 @@ highlight <- function(.data) filter(.data, acres > 4000000 | yield > 80)
 ggplot(wheat2011_data, aes(___, yield)) + 
   ___() + 
   ___(data = ___, color = "red") + 
+  geom_text(___)
 
 ```
 
