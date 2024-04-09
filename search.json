@@ -284,7 +284,7 @@
     "href": "slides/slide1.html#summary",
     "title": "Drawing plots with ggplot2",
     "section": "Summary",
-    "text": "Summary\n\n\ndata as data.frame\na set of aesthetic mappings between variables in the data and visual properties\nat least one layer (usually geom_ or stat_ functions) which describes what to render\nthe coordinate system (explained next)"
+    "text": "Summary\n\n\ndata as data.frame\na set of aesthetic mappings between variables in the data and visual properties\nat least one layer (usually geom_ or stat_ functions) which describes what to render\nthe coordinate system (explained later)"
   },
   {
     "objectID": "slides/slide1.html#ggplot2-cheatsheet",
